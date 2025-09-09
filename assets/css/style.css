@@ -200,7 +200,7 @@ html {
   clear: both;
   color: #FEFEFE;
   padding: 0;
-  margin: 0 0 20px 0; 
+  margin: 0 0 15px 0; 
   line-height: 1.3em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -340,8 +340,8 @@ input, textarea {
 }
 
 .cs-preloader_in {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,8 +371,8 @@ input, textarea {
   top: 50%;
   -webkit-animation: spin 1s ease-in-out infinite;
           animation: spin 1s ease-in-out infinite;
-  margin-left: -60px;
-  margin-top: -60px;
+  margin-left: -40px;
+  margin-top: -40px;
 }
 
 .cs-preloader_in::before {
@@ -2542,10 +2542,7 @@ label {
 }
 @media screen and (max-width: 1199px) {
   .cs-moving_text_wrap {
-    font-size: 80px;
-  }
-  .cs-page_heading.cs-style1 {
-    height: 300px;
+    font-size: 70px;
   }
   .cs-half_screen {
     width: 100%;
@@ -2569,7 +2566,7 @@ label {
 }
 @media screen and (max-width: 991px) {
   .cs-section_heading.cs-style1 .cs-section_title {
-    font-size: 36px;
+    font-size: 28px;
   }
   .cs-section_heading.cs-style1 .cs-section_subtitle {
     font-size: 14px;    
@@ -2859,23 +2856,20 @@ label {
   width: 56%;
 }
 
-.cs-slider.cs-style3 .cs-portfolio.cs-style1 {
-  padding: 50px 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+.cs-slider.cs-style3 .cs-portfolio.cs-style1 {-webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+@media (min-width:767.99px){
+  .cs-slider.cs-style3 .cs-portfolio.cs-style1 {padding: 0 0 50px;}
+  .cs-slide{transform: scale(.90); transition: all .5s ease-in-out;}
+  .slick-active .cs-slide{transform: scale(1);}
 }
 .cs-slider.cs-style3 .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
-  left: -20px;
-  top: 20px;
-  opacity: 0;
+  left: -20px; top: 20px; opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .cs-slider.cs-style3 .cs-portfolio.cs-style1 .cs-portfolio_title {
-  opacity: 0;
-  left: 20px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  opacity: 0; left: 20px; 
+  -webkit-transition: all 0.5s ease; transition: all 0.5s ease;
 }
 .cs-slider.cs-style3 .cs-portfolio.cs-style1 .cs-portfolio_subtitle {
   opacity: 0;
@@ -2937,7 +2931,7 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 .cs-pagination.cs-style1 ul {
   list-style: none;
@@ -3227,8 +3221,8 @@ label {
 }
 
 .slider-for .slick-arrow {
-  width: 60px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -3250,7 +3244,7 @@ label {
 }
 .slider-for .slick-prev {
   background-image: url(../img/prev_arrow.svg);
-  right: 76px;
+  right: 50px;
 }
 .slider-for .slick-next {
   background-image: url(../img/next_arrow.svg);
@@ -6913,10 +6907,10 @@ label {
 }
 @media screen and (max-width: 1199px) {
   .cs-card.cs-style1 .cs-card_title {
-    font-size: 24px;
+    font-size: 1.125rem;
   }
-  .cs-card.cs-style1 .cs-card_info {
-    padding: 40px 30px;
+  .cs-card.cs-style1 .cs-card_info { 
+    padding-block: 20px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7267,15 +7261,16 @@ label {
 }
 .cs-team.cs-style1 .cs-member_name {
   font-size: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 .cs-team.cs-style1 .cs-member_info {
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 3;
-  padding: 30px 25px;
+  padding: 15px;
 }
 .cs-team.cs-style1 .cs-member_social {
   position: absolute;
@@ -7579,7 +7574,7 @@ label {
   .cs-testimonial.cs-style1 .cs-testimonial_avatar_name,
   .cs-testimonial.cs-style2 .cs-testimonial_text,
   .cs-testimonial.cs-style2 .cs-testimonial_avatar_name {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -7589,6 +7584,12 @@ label {
   }
   .cs-testimonial.cs-style1 .cs-testimonial_avatar_name {
     margin-top: 30px;
+  }
+  .cs-testimonial.cs-style1 .cs-testimonial_text,
+  .cs-testimonial.cs-style1 .cs-testimonial_avatar_name,
+  .cs-testimonial.cs-style2 .cs-testimonial_text,
+  .cs-testimonial.cs-style2 .cs-testimonial_avatar_name {
+    font-size: 1rem;
   }
 }
 /*--------------------------------------------------------------
@@ -7677,7 +7678,7 @@ label {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  padding: 90px 20px 75px 50px;
+  padding: 70px 20px 70px 50px;
   bottom: -60px;
   left: -30px;
   position: absolute;
@@ -7699,10 +7700,11 @@ label {
 }
 .cs-portfolio.cs-style1 .cs-portfolio_subtitle {
   display: inline-block;
-  position: relative;
-  z-index: 2;
   padding-right: 30px;
   color: rgba(254, 254, 254, 0.7);
+  line-height: 1.3;
+  position: relative;
+  z-index: 2;
 }
 .cs-portfolio.cs-style1 .cs-portfolio_subtitle::after {
   content: "";
@@ -9581,10 +9583,8 @@ html .ui-button.ui-state-disabled:active {
 }/*# sourceMappingURL=style.css.map */
 
 /* Case Study */
-.work-case-study { background-color: #002033; padding: 40px 0; position: -webkit-sticky; position: sticky; top: 0px; z-index: 1;} 
-@media (min-width:1200px){
-  .case-study {min-height: 100vh;}
-}
+.work-case-study { /*background-color: #002033;*/ padding: 40px 0; position: -webkit-sticky; position: sticky; top: 40px; z-index: 1;} 
+ 
 .showcase_card_info .text-small {color: #05abc3;}
 .showcase_card_info .h2 {color: var(--white-color);}
 .showcase_card_info p {font-size: .875rem; line-height: 1.6;}
@@ -9628,4 +9628,71 @@ html .ui-button.ui-state-disabled:active {
 .services_block p { font-size: 14px;}
 @media (min-width:1200px) {
   .services_block {height: 100%;}
+}
+
+/* Whatsapp */
+.whatsapp-button {
+  position: fixed !important;
+  bottom: calc(50% - 26px/2);
+  right: 10px;
+  z-index: 999;
+  background-color: #25D366;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out 0s both;
+} 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.whatsapp-button svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+/* Case Study */
+.portfolio-info {
+  background-color: #080707;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.portfolio-info ul { margin: 0; padding: 0; list-style: none; padding: 15px 0;}
+.portfolio-info ul li { text-align: center; padding: 25px 20px; border-bottom: 1px solid rgba(255, 255, 255, .04); }
+.portfolio-info ul li:last-child {
+  border-bottom: 0;
+}
+
+/* Process */
+.magnetic-item {height: 100%;}
+.working-process .single-process {
+  background: rgba(217, 217, 217, .05);
+  border: 1px solid rgba(255, 255, 255, .05);
+  border-radius: 5px;
+  padding: 35px 20px;
+  position: relative;
+}
+.single-process .h4 {
+  font-weight: 600; 
+  text-transform: capitalize;
+  color: #fff;
+}
+.single-process p { 
+  font-weight: 300;
+  font-size: 15px; 
+  letter-spacing: .03em;
+  color: #b5b5b5;
 }
