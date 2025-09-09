@@ -1,327 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
-    <!-- Favicon Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#000">
-    <!-- Site Title -->
-    <title>Arino - Architecture Agency Template</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick.css">
-    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <div class="cs-preloader cs-center">
-      <div class="cs-preloader_in"></div>
-    </div>
-    <!-- Start Header Section -->
-    <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
-      <div class="cs-main_header">
-        <div class="container">
-          <div class="cs-main_header_in">
-            <div class="cs-main_header_left">
-              <a class="cs-site_branding" href="index.html">
-                <img src="assets/img/logo.svg" alt="Logo">
-              </a>
-            </div>
-            <div class="cs-main_header_center">
-              <div class="cs-nav cs-primary_font cs-medium">
-                <ul class="cs-nav_list">
-                  <li class="menu-item-has-children cs-mega_menu">
-                    <a href="index.html">Home</a>
-                    <ul class="cs-mega_wrapper">
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="index.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/main-home.jpeg" alt="Thumb">
-                            </a>
-                            <a href="index.html">Main Home</a>
-                          </li>
-                          <li>
-                            <a href="architecture-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/architecture-agency.jpeg" alt="Thumb">
-                            </a>
-                            <a href="architecture-agency.html">Architecture Agency</a>
-                            <span class="cs-header_badge">New</span>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="photography-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/photography-agency.jpeg" alt="Thumb">
-                            </a>
-                            <a href="photography-agency.html">Photography Agency</a>
-                          </li>
-                          <li>
-                            <a href="creative-solution.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/creative-solution.jpeg" alt="Thumb">
-                            </a>
-                            <a href="creative-solution.html">Creative Solution</a>
-                            <span class="cs-header_badge">New</span>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="creative-portfolio.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/portfolio.jpeg" alt="Thumb">
-                            </a>
-                            <a href="creative-portfolio.html">Creative Portfolio</a>
-                          </li>
-                          <li>
-                            <a href="personal-portfolio.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/personal-portfolio.jpeg" alt="Thumb">
-                              <span class="cs-header_badge">New</span>
-                            </a>
-                            <a href="personal-portfolio.html">Personal Portfolio</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="digital-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/digital-agency.jpeg" alt="Thumb">
-                            </a>
-                            <a href="digital-agency.html">Digital Agency</a>
-                          </li>
-                          <li>
-                            <a href="https://arino-html-rtl.vercel.app" target="_blank" class="cs-nav_list_img">
-                              <img src="assets/img/demo/rtl.jpeg" alt="Thumb">
-                            </a>
-                            <a href="https://arino-html-rtl.vercel.app" target="_blank">RTL Demo</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="marketing-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/marketing.jpeg" alt="Thumb">
-                            </a>
-                            <a href="marketing-agency.html">Marketing Agency</a>
-                          </li>
-                          <li>
-                            <a href="showcase-portfolio.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/portfolio-showcase.jpeg" alt="Thumb">
-                            </a>
-                            <a href="showcase-portfolio.html">Portfolio Showcase</a>
-                          </li>
-                          <li>
-                            <a href="case-study-showcase.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/case-study-showcase.jpeg" alt="Thumb">
-                            </a>
-                            <a href="case-study-showcase.html">Case Study Showcase</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="freelancer-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/freelancer-agency.jpeg" alt="Thumb">
-                            </a>
-                            <a href="freelancer-agency.html">Freelancing Agency</a>
-                          </li>
-                          <li>
-                            <a href="video-showcase.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/video-showcase.jpeg" alt="Thumb">
-                              <span class="cs-header_badge">New</span>
-                            </a>
-                            <a href="video-showcase.html">Video Showcase</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="service.html">Services</a>
-                    <ul>
-                      <li>
-                        <a href="service.html">Services</a>
-                      </li>
-                      <li>
-                        <a href="service.html">Service Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="portfolio.html">Portfolio</a>
-                    <ul>
-                      <li>
-                        <a href="portfolio.html">Portfolio</a>
-                      </li>
-                      <li>
-                        <a href="portfolio-details.html">Portfolio Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="blog.html">Blog</a>
-                    <ul>
-                      <li>
-                        <a href="blog.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="blog-details.html">Blog Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="shop.html">Shop</a>
-                    <ul>
-                      <li>
-                        <a href="shop.html">Our Shop</a>
-                      </li>
-                      <li>
-                        <a href="shop-product-details.html">Shop Details</a>
-                      </li>
-                      <li>
-                        <a href="shop-cart.html">Cart</a>
-                      </li>
-                      <li>
-                        <a href="shop-checkout.html">Checkout</a>
-                      </li>
-                      <li>
-                        <a href="shop-order-recived.html">Success Order</a>
-                      </li>
-                      <li>
-                        <a href="shop-wishlist.html">Wishlist</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                      <li>
-                        <a href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a href="team-details.html">Team Details</a>
-                      </li>
-                      <li>
-                        <a href="case-study.html">Case Study Details</a>
-                      </li>
-                      <li>
-                        <a href="faq.html">FAQ</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="cs-main_header_right">
-              <div class="cs-toolbox">
-                <span class="cs-icon_btn">
-                  <span class="cs-icon_btn_in">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="cs-side_header">
-      <button class="cs-close"></button>
-      <div class="cs-side_header_overlay"></div>
-      <div class="cs-side_header_in">
-        <div class="cs-side_header_shape"></div>
-        <a class="cs-site_branding" href="index.html">
-          <img src="assets/img/logo.svg" alt="Logo">
-        </a>
-        <div class="cs-side_header_box">
-          <h2 class="cs-side_header_heading"> Let’s brainstorm the next big thing together!!</h2>
-        </div>
-        <div class="cs-side_header_box">
-          <h3 class="cs-side_header_title cs-primary_color">Contact Us</h3>
-          <ul class="cs-contact_info cs-style1 cs-mp0">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.08 11.82 12.69 11.9 12.41 12.17L10.21 14.37C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.58C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM9 0V10L12 7H18V0H9Z" fill="#05abc3" />
-              </svg>
-              <span>+44 454 7800 112</span>
-            </li>
-            <li>
-              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#05abc3" />
-              </svg>
-              <span>infotech@arino.com</span>
-            </li>
-            <li>
-              <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#05abc3" />
-              </svg>
-              <span>50 Wall Street Suite, 44150 <br>Ohio, United States </span>
-            </li>
-          </ul>
-        </div>
-        <div class="cs-side_header_box">
-          <h3 class="cs-side_header_title cs-primary_color">Subscribe</h3>
-          <div class="cs-newsletter cs-style1">
-            <form action="#" class="cs-newsletter_form">
-              <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com">
-              <button class="cs-newsletter_btn">
-                <span>Send</span>
-              </button>
-            </form>
-            <div class="cs-newsletter_text"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit. </div>
-          </div>
-        </div>
-        <div class="cs-side_header_box">
-          <div class="cs-social_btns cs-style1">
-            <a href="https://www.linkedin.com/company/102006810/" target="_blank" class="cs-center">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.04799 13.7497H1.45647V5.4043H4.04799V13.7497ZM2.75084 4.2659C1.92215 4.2659 1.25 3.57952 1.25 2.75084C1.25 2.35279 1.40812 1.97105 1.68958 1.68958C1.97105 1.40812 2.35279 1.25 2.75084 1.25C3.14888 1.25 3.53063 1.40812 3.81209 1.68958C4.09355 1.97105 4.25167 2.35279 4.25167 2.75084C4.25167 3.57952 3.57924 4.2659 2.75084 4.2659ZM13.7472 13.7497H11.1613V9.68722C11.1613 8.71903 11.1417 7.4774 9.81389 7.4774C8.46652 7.4774 8.26004 8.5293 8.26004 9.61747V13.7497H5.67132V5.4043H8.15681V6.54269H8.19308C8.53906 5.887 9.38421 5.19503 10.6451 5.19503C13.2679 5.19503 13.75 6.92215 13.75 9.16546V13.7497H13.7472Z" fill="white"></path>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/people/Caron-Infotech/61558457265535/" target="_blank" class="cs-center">
-              <svg fill="#fff" width="15" height="15" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/@CaronInfotech" target="_blank" class="cs-center">
-              <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.4888 1.48066C12.345 0.939353 11.9215 0.513038 11.3837 0.368362C10.4089 0.105469 6.5 0.105469 6.5 0.105469C6.5 0.105469 2.59116 0.105469 1.61633 0.368362C1.07853 0.513061 0.65496 0.939353 0.5112 1.48066C0.25 2.4618 0.25 4.50887 0.25 4.50887C0.25 4.50887 0.25 6.55595 0.5112 7.53709C0.65496 8.0784 1.07853 8.48695 1.61633 8.63163C2.59116 8.89452 6.5 8.89452 6.5 8.89452C6.5 8.89452 10.4088 8.89452 11.3837 8.63163C11.9215 8.48695 12.345 8.0784 12.4888 7.53709C12.75 6.55595 12.75 4.50887 12.75 4.50887C12.75 4.50887 12.75 2.4618 12.4888 1.48066V1.48066ZM5.22158 6.36746V2.65029L8.48861 4.50892L5.22158 6.36746V6.36746Z"
-                  fill="white"></path>
-              </svg>
-            </a>
-            <!-- <a href="#" class="cs-center">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.87612 8.149C2.87612 8.87165 2.28571 9.46205 1.56306 9.46205C0.840402 9.46205 0.25 8.87165 0.25 8.149C0.25 7.42634 0.840402 6.83594 1.56306 6.83594H2.87612V8.149ZM3.53795 8.149C3.53795 7.42634 4.12835 6.83594 4.851 6.83594C5.57366 6.83594 6.16406 7.42634 6.16406 8.149V11.4369C6.16406 12.1596 5.57366 12.75 4.851 12.75C4.12835 12.75 3.53795 12.1596 3.53795 11.4369V8.149ZM4.851 2.87612C4.12835 2.87612 3.53795 2.28571 3.53795 1.56306C3.53795 0.840402 4.12835 0.25 4.851 0.25C5.57366 0.25 6.16406 0.840402 6.16406 1.56306V2.87612H4.851V2.87612ZM4.851 3.53795C5.57366 3.53795 6.16406 4.12835 6.16406 4.851C6.16406 5.57366 5.57366 6.16406 4.851 6.16406H1.56306C0.840402 6.16406 0.25 5.57366 0.25 4.851C0.25 4.12835 0.840402 3.53795 1.56306 3.53795H4.851V3.53795ZM10.1239 4.851C10.1239 4.12835 10.7143 3.53795 11.4369 3.53795C12.1596 3.53795 12.75 4.12835 12.75 4.851C12.75 5.57366 12.1596 6.16406 11.4369 6.16406H10.1239V4.851V4.851ZM9.46205 4.851C9.46205 5.57366 8.87165 6.16406 8.149 6.16406C7.42634 6.16406 6.83594 5.57366 6.83594 4.851V1.56306C6.83594 0.840402 7.42634 0.25 8.149 0.25C8.87165 0.25 9.46205 0.840402 9.46205 1.56306V4.851V4.851ZM8.149 10.1239C8.87165 10.1239 9.46205 10.7143 9.46205 11.4369C9.46205 12.1596 8.87165 12.75 8.149 12.75C7.42634 12.75 6.83594 12.1596 6.83594 11.4369V10.1239H8.149ZM8.149 9.46205C7.42634 9.46205 6.83594 8.87165 6.83594 8.149C6.83594 7.42634 7.42634 6.83594 8.149 6.83594H11.4369C12.1596 6.83594 12.75 7.42634 12.75 8.149C12.75 8.87165 12.1596 9.46205 11.4369 9.46205H8.149Z" fill="white"></path>
-              </svg>
-            </a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Header Section -->
+<?php include 'includes/header.php'; ?>
     <!-- Start Hero -->
     <div class="cs-hero cs-style6 cs-bg cs-fixed_bg" data-src="assets/img/hero_bg_6.jpeg" id="home">
       <div class="container">
@@ -398,7 +75,7 @@
               <h3 class="cs-section_subtitle">Services</h3>
               <h2 class="cs-section_title">We provide best value offer</h2>
               <div class="cs-height_45 cs-height_lg_20"></div>
-              <a href="service.html" class="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+              <a href="service.php" class="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 <span>See All Services</span>
                 <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
@@ -411,9 +88,9 @@
             <div class="cs-iconbox_4_wrap">
               <div class="cs-iconbox cs-style4">
                 <div class="cs-iconbox_icon"><img src="assets/img/icons/service_icon_1.svg" alt="Icon"></div>
-                <h2 class="cs-iconbox_title"><a href="service.html">Interior Design</a></h2>
+                <h2 class="cs-iconbox_title"><a href="service.php">Interior Design</a></h2>
                 <p class="cs-iconbox_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame.</p>
-                <a href="service.html" class="cs_iconbox_btn">
+                <a href="service.php" class="cs_iconbox_btn">
                   <span>Learn More</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
@@ -422,9 +99,9 @@
               </div>
               <div class="cs-iconbox cs-style4">
                 <div class="cs-iconbox_icon"><img src="assets/img/icons/service_icon_2.svg" alt="Icon"></div>
-                <h2 class="cs-iconbox_title"><a href="service.html">Urban Planning</a></h2>
+                <h2 class="cs-iconbox_title"><a href="service.php">Urban Planning</a></h2>
                 <p class="cs-iconbox_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame.</p>
-                <a href="service.html" class="cs_iconbox_btn">
+                <a href="service.php" class="cs_iconbox_btn">
                   <span>Learn More</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
@@ -433,9 +110,9 @@
               </div>
               <div class="cs-iconbox cs-style4">
                 <div class="cs-iconbox_icon"><img src="assets/img/icons/service_icon_3.svg" alt="Icon"></div>
-                <h2 class="cs-iconbox_title"><a href="service.html">Sustainable Design</a></h2>
+                <h2 class="cs-iconbox_title"><a href="service.php">Sustainable Design</a></h2>
                 <p class="cs-iconbox_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame.</p>
-                <a href="service.html" class="cs_iconbox_btn">
+                <a href="service.php" class="cs_iconbox_btn">
                   <span>Learn More</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
@@ -444,9 +121,9 @@
               </div>
               <div class="cs-iconbox cs-style4">
                 <div class="cs-iconbox_icon"><img src="assets/img/icons/service_icon_4.svg" alt="Icon"></div>
-                <h2 class="cs-iconbox_title"><a href="service.html">3D Modeling</a></h2>
+                <h2 class="cs-iconbox_title"><a href="service.php">3D Modeling</a></h2>
                 <p class="cs-iconbox_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame.</p>
-                <a href="service.html" class="cs_iconbox_btn">
+                <a href="service.php" class="cs_iconbox_btn">
                   <span>Learn More</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
@@ -528,7 +205,7 @@
         <div class="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="1" data-slides-per-view="1">
           <div class="cs-slider_wrapper">
             <div class="cs-slide">
-              <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-bg">
+              <a href="portfolio-details.php" class="cs-portfolio cs-style1 cs-bg">
                 <div class="cs-portfolio_hover"></div>
                 <div class="cs-portfolio_bg" data-src="assets/img/portfolio_45.jpeg"></div>
                 <div class="cs-portfolio_info">
@@ -540,7 +217,7 @@
             </div>
             <!-- .cs-slide -->
             <div class="cs-slide">
-              <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-bg">
+              <a href="portfolio-details.php" class="cs-portfolio cs-style1 cs-bg">
                 <div class="cs-portfolio_hover"></div>
                 <div class="cs-portfolio_bg" data-src="assets/img/portfolio_47.jpeg"></div>
                 <div class="cs-portfolio_info">
@@ -552,7 +229,7 @@
             </div>
             <!-- .cs-slide -->
             <div class="cs-slide">
-              <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-bg">
+              <a href="portfolio-details.php" class="cs-portfolio cs-style1 cs-bg">
                 <div class="cs-portfolio_hover"></div>
                 <div class="cs-portfolio_bg" data-src="assets/img/portfolio_46.jpeg"></div>
                 <div class="cs-portfolio_info">
@@ -605,7 +282,7 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Melon Bulgery</a>
+                      <a href="team-details.php">Melon Bulgery</a>
                     </h2>
                     <div class="cs-member_designation">Product Designer</div>
                   </div>
@@ -642,7 +319,7 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Olinaz Fushi</a>
+                      <a href="team-details.php">Olinaz Fushi</a>
                     </h2>
                     <div class="cs-member_designation">Project Manager</div>
                   </div>
@@ -679,7 +356,7 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">David Elone</a>
+                      <a href="team-details.php">David Elone</a>
                     </h2>
                     <div class="cs-member_designation">React Developer</div>
                   </div>
@@ -716,7 +393,7 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Melina Opole</a>
+                      <a href="team-details.php">Melina Opole</a>
                     </h2>
                     <div class="cs-member_designation">WP Developer</div>
                   </div>
@@ -753,7 +430,7 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Melon Bulgery</a>
+                      <a href="team-details.php">Melon Bulgery</a>
                     </h2>
                     <div class="cs-member_designation">Product Designer</div>
                   </div>
@@ -1142,164 +819,4 @@
         </a>
       </div>
     </div>
-    
-    <!-- Start Footer -->
-  <footer class="cs-fooer">
-    <div class="cs-fooer_main">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6">
-            <div class="cs-footer_item pe-lg-3">
-              <div class="cs-text_widget">
-                <img src="assets/img/logo.svg" alt="Thumb">
-                <p>Welcome to Caron Infotech, where we blend innovation with expertise to elevate your digital presence,
-                  product and software development.</p>
-              </div>
-              <div class="cs-social_btns cs-style1">
-                <a href="https://www.linkedin.com/company/102006810/" target="_blank" class="cs-center">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4.04799 13.7497H1.45647V5.4043H4.04799V13.7497ZM2.75084 4.2659C1.92215 4.2659 1.25 3.57952 1.25 2.75084C1.25 2.35279 1.40812 1.97105 1.68958 1.68958C1.97105 1.40812 2.35279 1.25 2.75084 1.25C3.14888 1.25 3.53063 1.40812 3.81209 1.68958C4.09355 1.97105 4.25167 2.35279 4.25167 2.75084C4.25167 3.57952 3.57924 4.2659 2.75084 4.2659ZM13.7472 13.7497H11.1613V9.68722C11.1613 8.71903 11.1417 7.4774 9.81389 7.4774C8.46652 7.4774 8.26004 8.5293 8.26004 9.61747V13.7497H5.67132V5.4043H8.15681V6.54269H8.19308C8.53906 5.887 9.38421 5.19503 10.6451 5.19503C13.2679 5.19503 13.75 6.92215 13.75 9.16546V13.7497H13.7472Z"
-                      fill="white" />
-                  </svg>
-                </a>
-                <a href="https://www.facebook.com/people/Caron-Infotech/61558457265535/" target="_blank" class="cs-center">
-                  <svg fill="#fff" width="15" height="15" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"/></svg>
-                </a>
-                <a href="https://www.youtube.com/@CaronInfotech" target="_blank" class="cs-center">
-                  <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.4888 1.48066C12.345 0.939353 11.9215 0.513038 11.3837 0.368362C10.4089 0.105469 6.5 0.105469 6.5 0.105469C6.5 0.105469 2.59116 0.105469 1.61633 0.368362C1.07853 0.513061 0.65496 0.939353 0.5112 1.48066C0.25 2.4618 0.25 4.50887 0.25 4.50887C0.25 4.50887 0.25 6.55595 0.5112 7.53709C0.65496 8.0784 1.07853 8.48695 1.61633 8.63163C2.59116 8.89452 6.5 8.89452 6.5 8.89452C6.5 8.89452 10.4088 8.89452 11.3837 8.63163C11.9215 8.48695 12.345 8.0784 12.4888 7.53709C12.75 6.55595 12.75 4.50887 12.75 4.50887C12.75 4.50887 12.75 2.4618 12.4888 1.48066V1.48066ZM5.22158 6.36746V2.65029L8.48861 4.50892L5.22158 6.36746V6.36746Z"
-                      fill="white"></path>
-                  </svg>
-                </a>
-                <!-- <a href="#" class="cs-center">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.87612 8.149C2.87612 8.87165 2.28571 9.46205 1.56306 9.46205C0.840402 9.46205 0.25 8.87165 0.25 8.149C0.25 7.42634 0.840402 6.83594 1.56306 6.83594H2.87612V8.149ZM3.53795 8.149C3.53795 7.42634 4.12835 6.83594 4.851 6.83594C5.57366 6.83594 6.16406 7.42634 6.16406 8.149V11.4369C6.16406 12.1596 5.57366 12.75 4.851 12.75C4.12835 12.75 3.53795 12.1596 3.53795 11.4369V8.149ZM4.851 2.87612C4.12835 2.87612 3.53795 2.28571 3.53795 1.56306C3.53795 0.840402 4.12835 0.25 4.851 0.25C5.57366 0.25 6.16406 0.840402 6.16406 1.56306V2.87612H4.851V2.87612ZM4.851 3.53795C5.57366 3.53795 6.16406 4.12835 6.16406 4.851C6.16406 5.57366 5.57366 6.16406 4.851 6.16406H1.56306C0.840402 6.16406 0.25 5.57366 0.25 4.851C0.25 4.12835 0.840402 3.53795 1.56306 3.53795H4.851V3.53795ZM10.1239 4.851C10.1239 4.12835 10.7143 3.53795 11.4369 3.53795C12.1596 3.53795 12.75 4.12835 12.75 4.851C12.75 5.57366 12.1596 6.16406 11.4369 6.16406H10.1239V4.851V4.851ZM9.46205 4.851C9.46205 5.57366 8.87165 6.16406 8.149 6.16406C7.42634 6.16406 6.83594 5.57366 6.83594 4.851V1.56306C6.83594 0.840402 7.42634 0.25 8.149 0.25C8.87165 0.25 9.46205 0.840402 9.46205 1.56306V4.851V4.851ZM8.149 10.1239C8.87165 10.1239 9.46205 10.7143 9.46205 11.4369C9.46205 12.1596 8.87165 12.75 8.149 12.75C7.42634 12.75 6.83594 12.1596 6.83594 11.4369V10.1239H8.149ZM8.149 9.46205C7.42634 9.46205 6.83594 8.87165 6.83594 8.149C6.83594 7.42634 7.42634 6.83594 8.149 6.83594H11.4369C12.1596 6.83594 12.75 7.42634 12.75 8.149C12.75 8.87165 12.1596 9.46205 11.4369 9.46205H8.149Z"
-                      fill="white" />
-                  </svg>
-                </a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="cs-footer_item">
-              <h2 class="cs-widget_title">Services</h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="cs-menu_widget cs-mp0">
-                    <li>
-                      <a href="service.html">UI/UX design</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Web development</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Mobile development</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Game development</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="cs-menu_widget cs-mp0">
-                    <li>
-                      <a href="service.html">UI/UX design</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Web development</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Mobile development</a>
-                    </li>
-                    <li>
-                      <a href="service.html">Game development</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="cs-footer_item">
-              <h2 class="cs-widget_title">Contact Us</h2>
-              <ul class="cs-menu_widget cs-mp0">
-                <li>C-253, Phase 8B, Industrial Area, <br /> SAS Nagar, Punjab, India, <br /> 160071</li>
-                <li><a href="tel: +919872612298 ">+919872612298  </a></li>
-                <li><a href="mailto:manish@caroninfotech.com">manish@caroninfotech.com</a> </li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="cs-footer_item">
-              <h2 class="cs-widget_title">Subscribe</h2>
-              <div class="cs-newsletter cs-style1">
-                <form action="#" class="cs-newsletter_form">
-                  <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com">
-                  <button class="cs-newsletter_btn">
-                    <span>Send</span>
-                  </button>
-                </form>
-                <div class="cs-newsletter_text"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui
-                  blandit. </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="cs-bottom_footer">
-        <div class="cs-bottom_footer_left">
-          <span class="cs-copyright">Copyright © 2024 caroninfotech</span>
-        </div>
-        <!-- <div class="cs-bottom_footer_right">
-          <ul class="cs-footer_links cs-mp0">
-            <li>
-              <a href="">Site Map</a>
-            </li>
-            <li>
-              <a href="">Privacy Policy</a>
-            </li>
-          </ul>
-        </div> -->
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-  
-
-    <span class="cs-scrollup">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor" />
-      </svg>
-    </span>
-    <!-- Start Video Popup -->
-    <div class="cs-video_popup">
-      <div class="cs-video_popup_overlay"></div>
-      <div class="cs-video_popup_content">
-        <div class="cs-video_popup_layer"></div>
-        <div class="cs-video_popup_container">
-          <div class="cs-video_popup_align">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="about:blank"></iframe>
-            </div>
-          </div>
-          <div class="cs-video_popup_close"></div>
-        </div>
-      </div>
-    </div>
-    <!-- End Video Popup -->
-    <!-- Script -->
-    <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/plugins/isotope.pkg.min.js"></script>
-    <script src="assets/js/plugins/jquery.slick.min.js"></script>
-    <script src="assets/js/plugins/jquery.counter.min.js"></script>
-    <script src="assets/js/plugins/lightgallery.min.js"></script>
-    <script src="assets/js/plugins/wow.min.js"></script>
-    <script src="assets/js/plugins/gsap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<?php include 'includes/footer.php'; ?>
