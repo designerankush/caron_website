@@ -29,6 +29,7 @@
           <li><a href="#" data-filter=".ui_ux_design">UI/UX Design</a></li>
           <li><a href="#" data-filter=".mobile_apps">App Development</a></li>
           <li><a href="#" data-filter=".blockchain">Blockchain</a></li> 
+          <li><a href="#" data-filter=".ecommerce">E-commerce</a></li> 
         </ul>
       </div>
     </div>
