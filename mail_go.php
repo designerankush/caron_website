@@ -36,11 +36,12 @@ try {
     $mail->AltBody =    $email_content;
 
     $mail->send();
-    echo 'Message has been sent';
+    $status = 'success';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    $status = 'error';
 }
 
-header('Location: contacts.php');
+header("Location: contacts.php?status=$status");
+exit;
 
 ?>
