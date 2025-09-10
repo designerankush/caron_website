@@ -136,9 +136,7 @@
 
   <!-- Script -->
   <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
-  <!-- <script src="assets/js/plugins/isotope.pkg.min.js"></script> -->
-   <!-- Bootstrap CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="assets/js/plugins/isotope.pkg.min.js"></script>
   <!-- Bootstrap JS + Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/plugins/jquery.slick.min.js"></script>

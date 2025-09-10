@@ -61,8 +61,16 @@
         <!-- Project Type -->
         <div class="col-sm-6">
           <label class="cs-primary_color">Project Type*</label>
-          <input type="text" class="cs-form_field form-control" name="project" required minlength="2">
-          <div class="invalid-feedback">Project type is required.</div>
+          <select class="cs-form_field form-control" name="project" required>
+            <option value="">-- Select Project Type --</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Game Development">Game Development</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Others">Others</option>
+          </select>
+          <div class="invalid-feedback">Please select a project type.</div>
         </div>
 
         <!-- Mobile -->
