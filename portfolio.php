@@ -24,18 +24,227 @@
       <div class="cs-isotop_filter cs-style1">
         <ul class="cs-mp0 cs-center">
           <li class="active"><a href="#" data-filter="*">All</a></li>
-          <li><a href="#" data-filter=".web_development">Web Development</a></li>
+          <li><a href="#" data-filter=".ecommerce">E-commerce</a></li> 
+          <li><a href="#" data-filter=".  ">Web Development</a></li>
           <li><a href="#" data-filter=".game_development">Game Development</a></li>
           <li><a href="#" data-filter=".ui_ux_design">UI/UX Design</a></li>
           <li><a href="#" data-filter=".mobile_apps">App Development</a></li>
           <li><a href="#" data-filter=".blockchain">Blockchain</a></li> 
-          <li><a href="#" data-filter=".ecommerce">E-commerce</a></li> 
         </ul>
       </div>
     </div>
     <div class="cs-height_80 cs-height_lg_15"></div>
     <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
       <div class="cs-grid_sizer"></div>
+      <!-- E-commerce: Flashmail -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/flashmail.jpeg" alt="Flashmail — Email SaaS" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Flashmail</h2>
+            <div class="cs-portfolio_subtitle">E-commerce email delivery and automation platform.</div>
+          </div>
+        </a>
+      </div>
+      <!-- App Development: In The Car -->
+      <div class="cs-isotop_item mobile_apps web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/in-the-car.jpeg" alt="In The Car App" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">In The Car</h2>
+            <div class="cs-portfolio_subtitle">
+              Mobility & travel app offering on-demand car services, ride tracking, and a seamless booking experience.
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Stack Kicks -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/stack-kicks.jpeg" alt="Stack Kicks — Sneaker Store" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Stack Kicks</h2>
+            <div class="cs-portfolio_subtitle">Sneaker e-commerce with stock drops and alerts.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Tequila POS -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/tequila-pos.jpeg" alt="Tequila POS — Retail Solution" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Tequila POS</h2>
+            <div class="cs-portfolio_subtitle">Point-of-sale system with multi-restaurant e-commerce integration.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Game Development: War Game Simulator -->
+      <div class="cs-isotop_item game_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/war-game-simulator.jpeg" alt="War Game Simulator" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">War Game Simulator</h2>
+            <div class="cs-portfolio_subtitle">Strategy simulation game with realistic scenarios and multiplayer mode.</div>
+          </div>
+        </a>
+      </div>
+      <!-- E-commerce: 4DFitness -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/4DFitness-thumbnail.jpg" alt="4DFitness — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">4DFitness</h2>
+            <div class="cs-portfolio_subtitle">Fitness products storefront with promos and bundled offers.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: 4DFitness (Alt) -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/4DFitness-thumbnail2.jpg" alt="4DFitness — Alt view" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">4DFitness (Alt)</h2>
+            <div class="cs-portfolio_subtitle">Alternate layout highlighting product discovery.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Filtary -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/Filtary.com.jpg" alt="Filtary — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Filtary</h2>
+            <div class="cs-portfolio_subtitle">Clean product grid with filters and quick cart.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Mijnboxspring -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/mijnboxspring.nl.jpg" alt="Mijnboxspring — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Mijnboxspring</h2>
+            <div class="cs-portfolio_subtitle">Configurable products with variant previews.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Petlovelle -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/petlovelle.com.jpg" alt="Petlovelle — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Petlovelle</h2>
+            <div class="cs-portfolio_subtitle">Pet supplies shop with curated collections.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: SNewBeginning (Shopify) -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/snewbeginnin...opify.com.jpg" alt="SNewBeginning — Shopify" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">SNewBeginning (Shopify)</h2>
+            <div class="cs-portfolio_subtitle">Lightweight theme with fast PDP and checkout.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: StackKicks -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/stackkicks_thumb.jpg" alt="StackKicks — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">StackKicks</h2>
+            <div class="cs-portfolio_subtitle">Sneaker store with drops, sizes, and stock alerts.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: TSCK (Black) -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/tsck-thumbnail-black.jpg" alt="TSCK (Black) — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">TSCK (Black)</h2>
+            <div class="cs-portfolio_subtitle">Bold black theme, conversion-focused layout.</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: TSCK -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/TSCK-Thumbnail.jpg" alt="TSCK — E-commerce" width="416" height="248">
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">TSCK</h2>
+            <div class="cs-portfolio_subtitle">Modern storefront with collection highlights.</div>
+          </div>
+        </a>
+      </div>
       <div class="cs-isotop_item ui_ux_design game_development">
         <a href="#" class="cs-portfolio cs-style1 cs-type1">
           <div class="cs-portfolio_hover"></div>
@@ -52,7 +261,7 @@
           </div>
         </a>
       </div><!-- .Game Development --> 
-      <div class="cs-isotop_item ui_ux_design mobile_apps">
+      <div class="cs-isotop_item ui_ux_design ui_ux_design">
         <a href="https://brianbeers.com/" target="_blank" class="cs-portfolio cs-style1 cs-type1">
           <div class="cs-portfolio_hover"></div>
           <div class="cs-portfolio_bg cs-bg">
@@ -341,7 +550,41 @@
             <!-- <div class="cs-portfolio_subtitle">See Details</div> -->
           </div>
         </a>
-      </div><!-- .cs-isotop_item -->     
+      </div><!-- .cs-isotop_item -->  
+      <!-- E-commerce: Common Sense -->
+      <div class="cs-isotop_item ecommerce web_development ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+            <img src="assets/img/portfolios/Common-Sense-Thumbnail.jpg" alt="Caron — E-commerce email template" />
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">Common Sense</h2>
+            <div class="cs-portfolio_subtitle">
+              E-commerce storefront with product catalog, cart, and secure checkout.
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- E-commerce: Email Template -->
+      <div class="cs-isotop_item ecommerce ui_ux_design">
+        <a href="#" class="cs-portfolio cs-style1 cs-type1">
+          <div class="cs-portfolio_hover"></div>
+          <div class="cs-portfolio_bg cs-bg">
+              <img src="assets/img/portfolios/caron-email-template.png" alt="Caron — E-commerce email template" />
+          </div>
+          <div class="cs-portfolio_info">
+            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+            <h2 class="cs-portfolio_title">E-commerce Email Template</h2>
+            <div class="cs-portfolio_subtitle">
+              Responsive promotional email for campaigns and transactional flows.
+            </div>
+          </div>
+        </a>
+      </div>
+   
       <!-- <div class="cs-isotop_item web_development">
         <a href="https://www.eyeglasses.com/" target="_blank" class="cs-portfolio cs-style1 cs-type1">
           <div class="cs-portfolio_hover"></div>
