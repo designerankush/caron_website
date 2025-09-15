@@ -23,6 +23,8 @@
   <meta name="twitter:title" content="Unleash Digital Product Excellence with Caron Infotech" />
   <meta name="twitter:description" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate your digital presence, product and software development." />
   <meta name="twitter:image" content="https://www.caroninfotech.com/assets/img/about/social-card.jpg" />
+  <!-- Google site -->
+  <meta name="google-site-verification" content="wpxXoEbbbYhzQDjIvsVkPPHvNpENpiPZ4hwP_afUVCQ" />
 
 
   <!-- Favicon Icon -->
