@@ -23,9 +23,12 @@
                 <li>
                   <a href="portfolio.php">Portfolio</a>
                 </li>
-                <!-- <li>
+                <li>
                   <a href="blog.php">Blog</a>
-                </li> -->
+                </li>
+                <li>
+                  <a href="careers.php">Careers</a>
+                </li>
                 <li>
                   <a href="faq.php">FAQ</a>
                 </li>
