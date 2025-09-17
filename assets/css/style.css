@@ -9696,3 +9696,45 @@ html .ui-button.ui-state-disabled:active {
   letter-spacing: .03em;
   color: #b5b5b5;
 }
+
+/* Css for contact modal */
+  /* Keep modal above sticky header if needed */
+  .modal { z-index: 1080; }
+  .modal-backdrop { z-index: 1070; }
+
+  /* Scoped styling so theme rules don’t leak in */
+  .ci-modal .modal-content {
+    border-radius: 16px !important;
+    border: 1px solid rgba(0,0,0,.08) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    background: #fff;
+  }
+  .ci-modal .modal-header {
+    border-bottom: 1px solid rgba(0,0,0,.08) !important;
+    background: #fff;
+  }
+  .ci-modal .modal-title {
+    color: #111 !important;
+    font-weight: 700;
+  }
+  .ci-modal .btn-close { opacity: .7; }
+  .ci-modal .btn-close:hover { opacity: 1; }
+
+  /* Accent strip on top by status */
+  .ci-modal .modal-content.ci-success { border-top: 4px solid #16a34a !important; } /* green */
+  .ci-modal .modal-content.ci-error   { border-top: 4px solid #dc3545 !important; } /* red   */
+
+  /* Status icon circle */
+  .ci-status-icon {
+    display: inline-flex;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    align-items: center; justify-content: center;
+  }
+  .ci-status-icon svg { width: 18px; height: 18px; }
+
+  .ci-success .ci-status-icon { background: rgba(22,163,74,.12); }
+  .ci-error   .ci-status-icon { background: rgba(220,53,69,.12); }
+
+  /* Body text—normal weight, readable */
+  #statusText { color: #222; line-height: 1.55; }
