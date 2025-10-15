@@ -23,16 +23,16 @@ $STEP    = 6;
   </div>
 </div>
 
-<div class="cs-height_150 cs-height_lg_80"></div>
+<!-- <div class="cs-height_150 cs-height_lg_80"></div> -->
 
 <!-- make the section full-bleed -->
 <div class="container-fluid px-0">
 
   <!-- Header -->
-  <div class="d-flex align-items-center justify-content-between mb-3 px-3 px-md-4">
+  <!-- <div class="d-flex align-items-center justify-content-between mb-3 px-3 px-md-4">
     <h2 class="h5 mb-0">Instagram</h2>
     <span class="text-muted small"><?= count($igUrls) ?> posts</span>
-  </div>
+  </div> -->
 
   <!-- Grid: one post per full-width row -->
   <div class="row g-0" id="socialGrid" data-step="<?=$STEP?>">
@@ -43,12 +43,6 @@ $STEP    = 6;
             data-instgrm-permalink="<?= htmlspecialchars($url) ?>"
             data-instgrm-version="14">
           </blockquote>
-
-          <div class="px-3 px-md-4 py-2">
-            <a class="small text-decoration-underline" href="<?= htmlspecialchars($url) ?>" target="_blank" rel="noopener">
-              Open on Instagram
-            </a>
-          </div>
         </div>
       </div>
     <?php endforeach; ?>
@@ -64,13 +58,9 @@ $STEP    = 6;
       </button>
     </div>
   <?php endif; ?>
-
-  <p class="text-center text-muted mt-4 small px-3 px-md-4">
-    If embeds don’t render, please check your network/content blockers or open posts directly on Instagram.
-  </p>
 </div>
 
-<div class="cs-height_150 cs-height_lg_80"></div>
+<!-- <div class="cs-height_150 cs-height_lg_80"></div> -->
 
 <!-- Instagram SDK -->
 <script async src="//www.instagram.com/embed.js"></script>
