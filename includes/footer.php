@@ -88,6 +88,9 @@
                     <li>
                       <a href="service.php">UI/UX Design</a>
                     </li>
+                    <li>
+                      <a href="social.php">Social Hub</a>
+                    </li>
                   </ul>
                 </div>
               </div>
