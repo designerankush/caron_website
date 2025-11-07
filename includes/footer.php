@@ -158,6 +158,134 @@
     </svg>
   </span>
 
+<!-- Caron Assistant (scoped, tabbed, iframe-based) -->
+<div id="ci-assistant" class="ci-hidden" aria-hidden="true">
+  <div class="ci-panel" role="dialog" aria-modal="true" aria-label="Caron’s Assistant">
+    <div class="ci-header">
+      <strong>Caron's Assistant</strong>
+      <button type="button" class="ci-close" aria-label="Close">×</button>
+    </div>
+
+    <div class="ci-tabs" role="tablist">
+      <button class="ci-tab ci-active" role="tab" aria-selected="true" data-target="#ci-tab-chat">Chat with us</button>
+      <button class="ci-tab" role="tab" aria-selected="false" data-target="#ci-tab-voice">Talk with us</button>
+    </div>
+
+    <div class="ci-bodies">
+      <!-- CHAT -->
+      <section id="ci-tab-chat" class="ci-body ci-active" role="tabpanel" aria-labelledby="Chat with us">
+        <iframe
+          src="/assistant/chat.html?brandColor=%2305ABC3&botName=Caron%E2%80%99s%20Assistant&hideHeader=1"
+          title="Chat with Caron’s Assistant"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          allow="clipboard-write"
+        ></iframe>
+      </section>
+
+      <!-- VOICE -->
+      <section id="ci-tab-voice" class="ci-body" role="tabpanel" aria-labelledby="Talk with us">
+        <iframe
+          src="/assistant/voice.html"
+          title="Talk with Caron’s Assistant"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          allow="microphone; clipboard-write"
+        ></iframe>
+      </section>
+    </div>
+  </div>
+
+  <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button>
+</div>
+
+<style>
+  /* ====== Caron Assistant — fully namespaced, no global bleed ====== */
+  :root { --ci-brand:#05ABC3; --ci-bg:#0f1a22; --ci-panel:#12212b; --ci-border:#1f3542; --ci-text:#e9f1f5; }
+
+  #ci-assistant { position:fixed; inset:0; pointer-events:none; z-index:999999; }
+  #ci-assistant.ci-hidden .ci-panel { transform:translateY(16px); opacity:0; visibility:hidden; }
+  #ci-assistant.ci-hidden .ci-fab   { transform:scale(1); }
+  #ci-assistant .ci-panel {
+    pointer-events:auto;
+    position:fixed; right:20px; bottom:96px; width:420px; max-width:calc(100vw - 24px);
+    background:var(--ci-panel); color:var(--ci-text); border:1px solid var(--ci-border);
+    border-radius:14px; box-shadow:0 18px 60px rgba(0,0,0,.45); overflow:hidden;
+    transition:.25s ease; opacity:1; visibility:visible;
+  }
+  #ci-assistant .ci-header {
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--ci-brand); color:#fff; padding:12px 14px; font-weight:700;
+  }
+  #ci-assistant .ci-close { background:transparent; color:#fff; border:0; font-size:22px; line-height:1; cursor:pointer; }
+  #ci-assistant .ci-tabs { display:flex; background:#0e1b23; border-bottom:1px solid var(--ci-border); }
+  #ci-assistant .ci-tab {
+    appearance:none; border:0; background:transparent; color:#cfe6ed; cursor:pointer;
+    padding:12px 16px; font-weight:600; border-bottom:2px solid transparent;
+  }
+  #ci-assistant .ci-tab.ci-active { color:#fff; border-color:var(--ci-brand); }
+  #ci-assistant .ci-bodies { height:560px; max-height:calc(100vh - 220px); }
+  #ci-assistant .ci-body { display:none; height:100%; }
+  #ci-assistant .ci-body.ci-active { display:block; }
+  #ci-assistant iframe { width:100%; height:100%; display:block; border:0; background:#fff; }
+
+  /* Floating Action Button */
+  #ci-assistant .ci-fab {
+    pointer-events:auto;
+    position:fixed; right:20px; bottom:20px;
+    width:56px; height:56px; border-radius:50%; border:0; cursor:pointer;
+    background:var(--ci-brand); color:#fff; font-size:22px; box-shadow:0 10px 28px rgba(0,0,0,.35);
+    transition:transform .15s ease;
+  }
+  #ci-assistant:not(.ci-hidden) .ci-fab { transform:scale(0); }
+
+  /* Mobile — make it a bottom sheet */
+  @media (max-width: 640px) {
+    #ci-assistant .ci-panel {
+      left:0; right:0; bottom:0; width:100%; max-width:none; border-radius:18px 18px 0 0;
+    }
+    #ci-assistant .ci-bodies { height:70vh; max-height:70vh; }
+  }
+</style>
+
+<script>
+  (function(){
+    const root = document.getElementById('ci-assistant');
+    const panel = root.querySelector('.ci-panel');
+    const fab   = root.querySelector('.ci-fab');
+    const close = root.querySelector('.ci-close');
+
+    // open/close
+    const open = ()=> root.classList.remove('ci-hidden');
+    const hide = ()=> root.classList.add('ci-hidden');
+    fab.addEventListener('click', open);
+    close.addEventListener('click', hide);
+
+    // switch tabs
+    root.querySelectorAll('.ci-tab').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        root.querySelectorAll('.ci-tab').forEach(b=>b.classList.remove('ci-active'));
+        root.querySelectorAll('.ci-body').forEach(b=>b.classList.remove('ci-active'));
+        btn.classList.add('ci-active');
+        const target = root.querySelector(btn.dataset.target);
+        if(target) target.classList.add('ci-active');
+
+        // optional: focus iframe on switch for accessibility
+        const frame = target && target.querySelector('iframe');
+        if (frame) frame.focus && frame.focus();
+      });
+    });
+
+    // close on ESC
+    window.addEventListener('keydown', e => { if (e.key === 'Escape') hide(); });
+
+    // open immediately if you want (otherwise user taps the FAB)
+    // open();
+  })();
+</script>
+
+<!-- AI chatbot ends here -->
+
   <!-- Script -->
   <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
   <script src="assets/js/plugins/isotope.pkg.min.js"></script>

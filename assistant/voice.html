@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caron’s Assistant — Voice</title>
+  <style>
+    body{font-family:Arial,system-ui,Segoe UI;display:flex;justify-content:center;margin:0;padding:24px;background:#f7f9fb}
+    #chatbox{width:400px;max-width:100%;background:#fff;border:1px solid #e6eef2;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.06);overflow:hidden}
+    #header{background:#05ABC3;color:#fff;font-weight:700;padding:12px 14px}
+    #messages{height:360px;overflow-y:auto;padding:12px;background:#fff}
+    .message{margin:8px 0;line-height:1.35}
+    .user b{color:#1b67ff}
+    .bot b{color:#2b8a3e}
+    #controls{border-top:1px solid #e6eef2;padding:12px;background:#fafcfd}
+    #talkBtn{width:100%;padding:12px;border:0;border-radius:8px;background:#05ABC3;color:#fff;font-weight:700;cursor:pointer}
+    #talkBtn.listening{background:#0c8fa3}
+    #warn{color:#b54708;font-size:12px;margin-top:8px;display:none}
+  </style>
+</head>
+<body>
+  <div id="chatbox">
+    <div id="header">Caron’s Assistant</div>
+    <div id="messages"></div>
+    <div id="controls">
+      <button id="talkBtn">🎤 Start talking</button>
+      <div id="warn">Speech recognition is not available in this browser.</div>
+    </div>
+  </div>
+
+  <script>
+    const BOT_NAME = "Caron’s Assistant";
+    const API_BASE = `${window.location.protocol}//${window.location.hostname}:3000`;
+    const API_URL  = `${API_BASE}/chat`;
+    // const API_URL  = "http://localhost:3000/chat";
+
+    const messagesDiv = document.getElementById("messages");
+    const talkBtn = document.getElementById("talkBtn");
+    const warn = document.getElementById("warn");
+
+    // Escape text for safe HTML
+    function escapeHtml(s){ return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+    function append(role, text){
+      const who = role === "user" ? "<b>You:</b>" : `<b>${BOT_NAME}:</b>`;
+      messagesDiv.insertAdjacentHTML("beforeend", `<div class="message ${role}">${who} ${escapeHtml(text)}</div>`);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+
+    // ==== Text-to-Speech ====
+    function pickVoice(){
+      const voices = window.speechSynthesis.getVoices();
+      // Prefer an English female-ish voice, fall back to first English, then first voice
+      return voices.find(v=>/en/i.test(v.lang) && /female|samantha|victoria|google uk english female/i.test(v.name))
+          || voices.find(v=>/en/i.test(v.lang))
+          || voices[0];
+    }
+
+    function speak(text){
+      try{
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = "en-IN";          // tweak if you want
+        u.rate = 1; u.pitch = 1.05;
+        const v = pickVoice();
+        if(v) u.voice = v;
+        window.speechSynthesis.cancel(); // stop any ongoing TTS
+        window.speechSynthesis.speak(u);
+      }catch(e){ console.warn("TTS error:", e); }
+    }
+
+    // ==== Backend bridge ====
+    async function sendMessage(message){
+      try{
+        const r = await fetch(API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(message ? { message } : {}) // empty => greeting
+        });
+        const data = await r.json();
+        const reply = data.reply || "How can I help?";
+        append("bot", reply);
+        speak(reply);
+      }catch(e){
+        console.error(e);
+        append("bot","Sorry, I couldn't reach the server.");
+      }
+    }
+
+    // Initial greeting (also spoken)
+    window.addEventListener("DOMContentLoaded", ()=> sendMessage("") );
+
+    // ==== Speech Recognition ====
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = null;
+    let listening = false;
+
+    if(!SR){
+      talkBtn.disabled = true;
+      warn.style.display = "block";
+    } else {
+      recognition = new SR();
+      recognition.lang = "en-IN";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onresult = (event)=>{
+        const userText = event.results[0][0].transcript;
+        append("user", userText);
+        sendMessage(userText);
+      };
+
+      recognition.onstart = ()=>{
+        listening = true;
+        talkBtn.classList.add("listening");
+        talkBtn.textContent = "🛑 Stop listening";
+      };
+
+      recognition.onend = ()=>{
+        listening = false;
+        talkBtn.classList.remove("listening");
+        talkBtn.textContent = "🎤 Start talking";
+      };
+
+      recognition.onerror = (e)=>{
+        console.error("Speech recognition error:", e.error);
+        listening = false;
+        talkBtn.classList.remove("listening");
+        talkBtn.textContent = "🎤 Start talking";
+      };
+    }
+
+    talkBtn.addEventListener("click", ()=>{
+      if(!recognition) return;
+      // Stop any speaking so the mic doesn't capture TTS
+      try{ window.speechSynthesis.cancel(); }catch(_){}
+      if(!listening) recognition.start();
+      else recognition.stop();
+    });
+  </script>
+</body>
+</html>
