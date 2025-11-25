@@ -25,7 +25,7 @@ $blogs = ci_load_blog_index();
   </div>
 </div>
 
-<div class="cs-height_150 cs-height_lg_80"></div>
+<div class="cs-height_120 cs-height_lg_80"></div>
 
 <div class="container">
   <?php if (empty($blogs)): ?>
