@@ -196,7 +196,7 @@
     </div>
   </div>
 
-  <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button>
+  <!-- <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button> -->
 </div>
 
 <style>
