@@ -166,10 +166,10 @@
       <button type="button" class="ci-close" aria-label="Close">×</button>
     </div>
 
-    <div class="ci-tabs" role="tablist">
+    <!-- <div class="ci-tabs" role="tablist">
       <button class="ci-tab ci-active" role="tab" aria-selected="true" data-target="#ci-tab-chat">Chat with us</button>
       <button class="ci-tab" role="tab" aria-selected="false" data-target="#ci-tab-voice">Talk with us</button>
-    </div>
+    </div> -->
 
     <div class="ci-bodies">
       <!-- CHAT -->
@@ -196,7 +196,7 @@
     </div>
   </div>
 
-  <!-- <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button> -->
+  <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button>
 </div>
 
 <style>
