@@ -18,7 +18,7 @@
   <meta name="author" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate
   your digital presence, product and software development. Discover our comprehensive solutions tailored for
   web, mobile,BlockChain, IOT and game development that turn your visions into virtual success stories.">
-
+  <meta name="google-site-verification" content="mn9z9TPLdLqsHMZ9ANr8a0ojFrRwowSrbfRXWpsknzk" />
   <!-- Open Graph -->
   <meta property="og:title" content="Unleash Digital Product Excellence with Caron Infotech" />
   <meta property="og:description" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate your digital presence, product and software development." />
