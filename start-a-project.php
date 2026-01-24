@@ -134,4 +134,3 @@ include 'includes/header.php';
 <div class="cs-height_120 cs-height_lg_80"></div>
 
 <?php include 'includes/footer.php'; ?>
-<?php include 'includes/footer.php'; ?>
