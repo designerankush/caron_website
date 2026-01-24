@@ -9738,3 +9738,274 @@ html .ui-button.ui-state-disabled:active {
 
   /* Body text—normal weight, readable */
   #statusText { color: #222; line-height: 1.55; }
+
+/* Start Project Hero */
+.cs-start-project-hero {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #0b1c2d, #12283a);
+  color: #fff;
+}
+
+.cs-start-left h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cs-start-left h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.cs-start-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 520px;
+  margin-bottom: 15px;
+}
+
+/* Right panel */
+.cs-start-right {
+  background: rgba(255,255,255,0.03);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.cs-start-right h3 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Service tags */
+.cs-service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cs-service-tags span {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.08);
+  font-size: 14px;
+  cursor: default;
+  transition: 0.3s ease;
+}
+
+.cs-service-tags span:hover {
+  background: #05abc3;
+  color: #fff;
+}
+
+/* Center CTA */
+.cs-start-cta {
+  margin-top: 60px;
+}
+
+.cs-btn_primary {
+  background: #05abc3;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cs-btn_primary:hover {
+  background: #0392a8;
+}
+
+/* Work section */
+.cs-project-work {
+  padding: 100px 0;
+  background: #0f2233;
+}
+
+.cs-project-work h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cs-project-work p {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.cs-project-work ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Divider */
+.cs-section-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* CTA section */
+.cs-project-cta {
+  padding: 100px 0;
+  background: #0b1c2d;
+}
+
+.cs-project-cta h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.cs-project-cta p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+  opacity: 0.85;
+}
+
+/* Buttons */
+.cs-btn_primary {
+  background: #05abc3;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cs-btn_primary:hover {
+  background: #0392a8;
+}
+
+
+/* Modal */
+.cs-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.cs-modal.active {
+  display: block;
+}
+
+.cs-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.cs-modal-content {
+  position: relative;
+  max-width: 600px;
+  margin: 5vh auto;
+  background: #0e1726;
+  padding: 40px;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 2;
+}
+
+.cs-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cs-form input,
+.cs-form select,
+.cs-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a3553;
+  background: #0b1324;
+  color: #fff;
+}
+
+.cs-form input::placeholder,
+.cs-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* Modal Wrapper */
+.cs-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+/* Active State */
+.cs-modal.active {
+  display: block;
+}
+
+/* Overlay */
+.cs-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* Modal Box */
+.cs-modal-content {
+  position: relative;
+  max-width: 520px;
+  background: #0e1623;
+  margin: 5% auto;
+  padding: 40px;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 2;
+}
+
+/* Close Button */
+.cs-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Headings */
+.cs-modal-title {
+  margin-bottom: 8px;
+}
+
+.cs-modal-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.cs-form-group {
+  margin-bottom: 15px;
+}
+
+.cs-form input,
+.cs-form textarea,
+.cs-form select {
+  width: 100%;
+  padding: 12px 14px;
+  background: #111c2e;
+  border: 1px solid #1f2f4a;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Prevent body scroll */
+.cs-modal-open {
+  overflow: hidden;
+}

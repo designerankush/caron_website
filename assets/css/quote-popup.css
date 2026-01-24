@@ -1,0 +1,89 @@
+.quote-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.quote-modal.active {
+  display: block;
+}
+
+.quote-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+}
+
+.quote-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 5vh auto;
+  background: #0f1d2e;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.quote-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  color: #fff;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.quote-left {
+  padding: 60px;
+}
+
+.quote-left h2 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.quote-form {
+  background: #111;
+  padding: 40px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.quote-submit {
+  background: #05abc3;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+}

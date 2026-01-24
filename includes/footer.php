@@ -91,6 +91,9 @@
                     <li>
                       <a href="social.php">Social Hub</a>
                     </li>
+                    <li>
+                      <a href="start-a-project.php">Start a Project</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -198,6 +201,57 @@
 
   <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button>
 </div>
+
+<!-- Quote Modal -->
+<div class="cs-modal" id="quoteModal">
+  <div class="cs-modal-overlay"></div>
+
+  <div class="cs-modal-content">
+    <button class="cs-modal-close" id="closeQuoteModal">&times;</button>
+
+    <h2 class="cs-modal-title">Let’s Get Started</h2>
+    <p class="cs-modal-subtitle">
+      Tell us about your project and we’ll get back to you shortly.
+    </p>
+
+    <form action="mail_go.php" method="POST" class="cs-form">
+
+      <div class="cs-form-group">
+        <input type="text" name="full-name" placeholder="Full Name*" required>
+      </div>
+
+      <div class="cs-form-group">
+        <input type="email" name="email" placeholder="Email Address*" required>
+      </div>
+
+      <div class="cs-form-group">
+        <input type="text" name="number" placeholder="Phone Number">
+      </div>
+
+      <div class="cs-form-group">
+        <select name="project" required>
+          <option value="">Select Project Type*</option>
+          <option>SaaS Development</option>
+          <option>Web Development</option>
+          <option>Mobile App Development</option>
+          <option>UI / UX Design</option>
+          <option>Game Development</option>
+          <option>Automation & Integrations</option>
+        </select>
+      </div>
+
+      <div class="cs-form-group">
+        <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+      </div>
+
+      <button type="submit" class="cs-btn cs-style1 w-100">
+        Submit Request
+      </button>
+
+    </form>
+  </div>
+</div>
+
 
 <style>
   /* ====== Caron Assistant — fully namespaced, no global bleed ====== */
@@ -308,6 +362,7 @@
   <script src="assets/js/plugins/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
+  <script src="assets/js/quote-popup.js"></script>
 </body>
 
 </html>
