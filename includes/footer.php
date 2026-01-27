@@ -67,26 +67,26 @@
                 <div class="col-md-6">
                   <ul class="cs-menu_widget cs-mp0">
                     <li>
-                      <a href="service.php">SAAS Development</a>
+                      <a href="saas-development.php">SAAS Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Web Development</a>
+                      <a href="web-development.php">Web Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Mobile Development</a>
+                      <a href="mobile-development.php">Mobile Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Game Development</a>
+                      <a href="game-development.php">Game Development</a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-md-6">
                   <ul class="cs-menu_widget cs-mp0">
                     <li>
-                      <a href="service.php">Web3 Development</a>
+                      <a href="automation-integrations.php">Automation & Integrations</a>
                     </li>
                     <li>
-                      <a href="service.php">UI/UX Design</a>
+                      <a href="ui-ux-design.php">UI/UX Design</a>
                     </li>
                     <li>
                       <a href="social.php">Social Hub</a>

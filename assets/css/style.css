@@ -1,3 +1,5 @@
+@import url("services.css");
+
 /* banner lines */
 .lines .line {
   position: absolute;
@@ -9739,6 +9741,53 @@ html .ui-button.ui-state-disabled:active {
   /* Body text—normal weight, readable */
   #statusText { color: #222; line-height: 1.55; }
 
+/* CSS for menu */
+
+/* Dropdown */
+.cs-has_dropdown {
+  position: relative;
+}
+
+.cs-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0b0f17;
+  min-width: 220px;
+  padding: 12px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all .25s ease;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.cs-dropdown li {
+  display: block;
+}
+
+.cs-dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #fff;
+}
+
+.cs-dropdown li a:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.cs-has_dropdown:hover > .cs-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ends here */
+
+
 /* Start Project Hero */
 .cs-start-project-hero {
   padding: 120px 0 80px;
@@ -10008,4 +10057,13 @@ html .ui-button.ui-state-disabled:active {
 /* Prevent body scroll */
 .cs-modal-open {
   overflow: hidden;
+}
+
+.cs-nav_list li.active > a {
+  color: #05abc3;
+}
+
+.cs-dropdown li.active > a {
+  color: #05abc3;
+  font-weight: 600;
 }
