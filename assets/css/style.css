@@ -10067,3 +10067,68 @@ html .ui-button.ui-state-disabled:active {
   color: #05abc3;
   font-weight: 600;
 }
+
+
+/* style for pagination */
+
+/* ============================
+   BLOG PAGINATION
+============================ */
+
+.ci-pagination-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ci-pagination {
+  display: inline-flex;
+  gap: 6px;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.ci-page-item {
+  list-style: none;
+}
+
+.ci-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #cfd6dd;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ci-page-link:hover {
+  background: rgba(0, 188, 212, 0.15);
+  border-color: rgba(0, 188, 212, 0.45);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Active page */
+.ci-page-item.active .ci-page-link {
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,188,212,0.35);
+  cursor: default;
+}
+
+/* Disabled prev/next */
+.ci-page-item.disabled .ci-page-link {
+  opacity: 0.35;
+  pointer-events: none;
+}
