@@ -2,46 +2,81 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Include PHPMailer's classes
-require 'vendor/autoload.php'; // Adjust path if needed
+require 'vendor/autoload.php';
+require __DIR__ . '/bootstrap.php';
 
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
+
+    /* =========================================
+       LOAD CONFIG VALUES
+    ========================================= */
+    $mailHost = ci_config('mail.host');
+    $mailPort = ci_config('mail.port', 587);
+    $mailUser = ci_config('mail.username');
+    $mailPass = ci_config('mail.password');
+    $mailEnc  = ci_config('mail.encryption', 'tls');
+
+    $fromEmail = ci_config('mail.from_email');
+    $fromName  = ci_config('mail.from_name', 'Caron Infotech');
+    $replyTo   = ci_config('mail.reply_to', $fromEmail);
+
+    /* =========================================
+       SERVER SETTINGS
+    ========================================= */
     $mail->isSMTP();
-    $mail->Host = 'smtp-relay.brevo.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = '9690ae001@smtp-brevo.com';
-    $mail->Password = 'CQGjZSxsU3VO5JfX';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
+    $mail->Host       = $mailHost;
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $mailUser;
+    $mail->Password   = $mailPass;
+    $mail->SMTPSecure = $mailEnc === 'ssl'
+        ? PHPMailer::ENCRYPTION_SMTPS
+        : PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = $mailPort;
 
-    //Recipients
-    $mail->setFrom('contact@caroninfotech.com', 'Caroninfotech');
-    $mail->addAddress('msrivastav118@gmail.com', 'Caron Infotech'); // Add a recipient
-    $mail->addBcc('mps813@gmail.com', 'Caron Infotech'); // Add a recipient
-    $mail->addBcc('contact@caroninfotech.com', 'Caron Infotech'); // Add a recipient
+    /* =========================================
+       RECIPIENTS
+    ========================================= */
+    $mail->setFrom($fromEmail, $fromName);
+    $mail->addAddress($fromEmail, $fromName); // send to company email
 
-    $email_content  =   '';
-    $email_content  .=  'Full Name: '.$_POST['full-name']. '<br/>';
-    $email_content  .=  'Email: '.$_POST['email']. '<br/>';
-    $email_content  .=  'Project Type: '.$_POST['project']. '<br/>';
-    $email_content  .=  'Mobile: '.$_POST['number']. '<br/>';
-    $email_content  .=  'Project Details: '.$_POST['message']. '<br/>';
-    // Content
+    if (!empty($replyTo)) {
+        $mail->addReplyTo($replyTo);
+    }
+
+    /* =========================================
+       SANITIZE INPUT
+    ========================================= */
+    $fullName = htmlspecialchars($_POST['full-name'] ?? '');
+    $email    = htmlspecialchars($_POST['email'] ?? '');
+    $project  = htmlspecialchars($_POST['project'] ?? '');
+    $mobile   = htmlspecialchars($_POST['number'] ?? '');
+    $message  = nl2br(htmlspecialchars($_POST['message'] ?? ''));
+
+    /* =========================================
+       EMAIL CONTENT
+    ========================================= */
+    $email_content = "
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Full Name:</strong> {$fullName}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Project Type:</strong> {$project}</p>
+        <p><strong>Mobile:</strong> {$mobile}</p>
+        <p><strong>Project Details:</strong><br>{$message}</p>
+    ";
+
     $mail->isHTML(true);
-    $mail->Subject = 'Caron infortech contat form query.';
-    $mail->Body    =    $email_content;
-    $mail->AltBody =    $email_content;
+    $mail->Subject = 'New Contact Form Query - Caron Infotech';
+    $mail->Body    = $email_content;
+    $mail->AltBody = strip_tags($email_content);
 
     $mail->send();
     $status = 'success';
+
 } catch (Exception $e) {
     $status = 'error';
 }
 
 header("Location: contacts.php?status=$status");
 exit;
-
-?>
