@@ -1,3 +1,37 @@
+<?php
+
+// 1) Load central meta map
+$__metaMap = [];
+$__metaFile = __DIR__ . '/page-meta.php';
+if (is_file($__metaFile)) {
+  $__metaMap = include $__metaFile;
+}
+
+// 2) Detect current page (index.php, about.php, etc.)
+$__currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
+
+// 3) Pick meta from config unless page already set $page_title / $meta_description
+$__defaultTitle = 'Caron Infotech';
+$__defaultDesc  = 'Caron Infotech - Web, Mobile, AI & Software Development.';
+
+$__pageMeta = $__metaMap[$__currentPage] ?? [];
+$page_title = isset($page_title) && trim($page_title) !== ''
+  ? $page_title
+  : ($__pageMeta['title'] ?? $__defaultTitle);
+
+$meta_description = isset($meta_description) && trim($meta_description) !== ''
+  ? $meta_description
+  : ($__pageMeta['desc'] ?? $__defaultDesc);
+
+// 4) Current URL (for canonical + OG)
+$__scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$__host   = $_SERVER['HTTP_HOST'] ?? 'caroninfotech.com';
+$__uri    = $_SERVER['REQUEST_URI'] ?? '/';
+$__url    = $__scheme . '://' . $__host . $__uri;
+
+// Optional: choose OG image (keep your existing default)
+$og_image = $og_image ?? 'https://www.caroninfotech.com/assets/img/about/social-card.jpg';
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -10,28 +44,26 @@
   })(window,document,'script','dataLayer','GTM-WSNPM2W8');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Meta Tags -->
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CaronInfotech">
-  <meta name="author" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate
-  your digital presence, product and software development. Discover our comprehensive solutions tailored for
-  web, mobile,BlockChain, IOT and game development that turn your visions into virtual success stories.">
-  <meta name="google-site-verification" content="mn9z9TPLdLqsHMZ9ANr8a0ojFrRwowSrbfRXWpsknzk" />
+  
+  <title><?= htmlspecialchars($page_title) ?></title>
+  <meta name="description" content="<?= htmlspecialchars($meta_description) ?>">
+  <link rel="canonical" href="<?= htmlspecialchars($__url) ?>">
   <!-- Open Graph -->
-  <meta property="og:title" content="Unleash Digital Product Excellence with Caron Infotech" />
-  <meta property="og:description" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate your digital presence, product and software development." />
-  <meta property="og:image" content="https://www.caroninfotech.com/assets/img/about/social-card.jpg" />
-  <meta property="og:url" content="https://www.caroninfotech.com" />
+  <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>" />
+  <meta property="og:description" content="<?= htmlspecialchars($meta_description) ?>" />
+  <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>" />
+  <meta property="og:url" content="<?= htmlspecialchars($__url) ?>" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Unleash Digital Product Excellence with Caron Infotech" />
-  <meta name="twitter:description" content="Welcome to Caron Infotech, where we blend innovation with expertise to elevate your digital presence, product and software development." />
-  <meta name="twitter:image" content="https://www.caroninfotech.com/assets/img/about/social-card.jpg" />
-  <!-- Google site -->
+  <meta name="twitter:title" content="<?= htmlspecialchars($page_title) ?>" />
+  <meta name="twitter:description" content="<?= htmlspecialchars($meta_description) ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>" />
+  <meta name="google-site-verification" content="mn9z9TPLdLqsHMZ9ANr8a0ojFrRwowSrbfRXWpsknzk" />
   <meta name="google-site-verification" content="wpxXoEbbbYhzQDjIvsVkPPHvNpENpiPZ4hwP_afUVCQ" />
 
 
@@ -43,11 +75,6 @@
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
   <meta name="theme-color" content="#1a2333">
-  
-  <!-- Site Title -->
-  <title>Welcome to Caron Infotech, where we blend innovation with expertise to elevate
-    your digital presence, product and software development. Discover our comprehensive solutions tailored for
-    web, mobile,BlockChain, IOT and game development that turn your visions into virtual success stories.</title>
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/plugins/slick.css">
@@ -57,14 +84,14 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSNPM2W8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="cs-preloader cs-center">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSNPM2W8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="cs-preloader cs-center">
     <div class="cs-preloader_in"></div>
   </div>
-  
+
   <?php include 'includes/nav.php'; ?>
 
   <div class="cs-side_header">

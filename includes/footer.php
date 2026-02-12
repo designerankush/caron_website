@@ -130,7 +130,9 @@
     <div class="container">
       <div class="cs-bottom_footer">
         <div class="cs-bottom_footer_left">
-          <span class="cs-copyright">Copyright © 2025 caroninfotech</span>
+          <span class="cs-copyright">
+            Copyright © <?= date('Y') ?> Caron Infotech. All Rights Reserved.
+          </span>
         </div>
         <!-- <div class="cs-bottom_footer_right">
           <ul class="cs-footer_links cs-mp0">
