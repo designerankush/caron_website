@@ -2,81 +2,90 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/bootstrap.php';
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  header('Location: contacts.php');
+  exit;
+}
+
+function ci_post($key, $default = '') {
+  return isset($_POST[$key]) ? trim((string)$_POST[$key]) : $default;
+}
+
+// Basic fields
+$fullName = ci_post('full-name');
+$email    = ci_post('email');
+$project  = ci_post('project');
+$number   = ci_post('number');
+$message  = ci_post('message');
+
+// Basic validation (keep simple)
+if ($fullName === '' || $email === '' || $message === '') {
+  header("Location: contacts.php?status=error");
+  exit;
+}
 
 $mail = new PHPMailer(true);
 
 try {
+  // Config (from config.php via bootstrap.php)
+  $mailHost = ci_config('mail.host');
+  $mailPort = (int) ci_config('mail.port', 587);
+  $mailUser = ci_config('mail.username');
+  $mailPass = ci_config('mail.password');
+  $mailEnc  = ci_config('mail.encryption', 'tls');
 
-    /* =========================================
-       LOAD CONFIG VALUES
-    ========================================= */
-    $mailHost = ci_config('mail.host');
-    $mailPort = ci_config('mail.port', 587);
-    $mailUser = ci_config('mail.username');
-    $mailPass = ci_config('mail.password');
-    $mailEnc  = ci_config('mail.encryption', 'tls');
+  $fromEmail = ci_config('mail.from_email');
+  $fromName  = ci_config('mail.from_name', 'Caron Infotech');
+  $replyTo   = ci_config('mail.reply_to', $fromEmail);
 
-    $fromEmail = ci_config('mail.from_email');
-    $fromName  = ci_config('mail.from_name', 'Caron Infotech');
-    $replyTo   = ci_config('mail.reply_to', $fromEmail);
+  $toEmail   = ci_config('mail.to_email', $fromEmail);
+  $toName    = ci_config('mail.to_name', 'Caron Infotech');
 
-    /* =========================================
-       SERVER SETTINGS
-    ========================================= */
-    $mail->isSMTP();
-    $mail->Host       = $mailHost;
-    $mail->SMTPAuth   = true;
-    $mail->Username   = $mailUser;
-    $mail->Password   = $mailPass;
-    $mail->SMTPSecure = $mailEnc === 'ssl'
-        ? PHPMailer::ENCRYPTION_SMTPS
-        : PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = $mailPort;
+  // Server settings
+  $mail->isSMTP();
+  $mail->Host       = $mailHost;
+  $mail->SMTPAuth   = true;
+  $mail->Username   = $mailUser;
+  $mail->Password   = $mailPass;
+  $mail->Port       = $mailPort;
 
-    /* =========================================
-       RECIPIENTS
-    ========================================= */
-    $mail->setFrom($fromEmail, $fromName);
-    $mail->addAddress($fromEmail, $fromName); // send to company email
+  // encryption
+  if ($mailEnc === 'ssl') {
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+  } else {
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // tls
+  }
 
-    if (!empty($replyTo)) {
-        $mail->addReplyTo($replyTo);
-    }
+  // Recipients
+  $mail->setFrom($fromEmail, $fromName);
+  $mail->addAddress($toEmail, $toName);
+  $mail->addReplyTo($replyTo, $fromName);
 
-    /* =========================================
-       SANITIZE INPUT
-    ========================================= */
-    $fullName = htmlspecialchars($_POST['full-name'] ?? '');
-    $email    = htmlspecialchars($_POST['email'] ?? '');
-    $project  = htmlspecialchars($_POST['project'] ?? '');
-    $mobile   = htmlspecialchars($_POST['number'] ?? '');
-    $message  = nl2br(htmlspecialchars($_POST['message'] ?? ''));
+  // Content
+  $mail->isHTML(true);
+  $mail->Subject = 'Caron Infotech contact form query';
 
-    /* =========================================
-       EMAIL CONTENT
-    ========================================= */
-    $email_content = "
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Full Name:</strong> {$fullName}</p>
-        <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Project Type:</strong> {$project}</p>
-        <p><strong>Mobile:</strong> {$mobile}</p>
-        <p><strong>Project Details:</strong><br>{$message}</p>
-    ";
+  $email_content  = '';
+  $email_content .= 'Full Name: ' . htmlspecialchars($fullName) . '<br/>';
+  $email_content .= 'Email: ' . htmlspecialchars($email) . '<br/>';
+  $email_content .= 'Project Type: ' . htmlspecialchars($project) . '<br/>';
+  $email_content .= 'Mobile: ' . htmlspecialchars($number) . '<br/>';
+  $email_content .= 'Project Details: ' . nl2br(htmlspecialchars($message)) . '<br/>';
 
-    $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Query - Caron Infotech';
-    $mail->Body    = $email_content;
-    $mail->AltBody = strip_tags($email_content);
+  $mail->Body    = $email_content;
+  $mail->AltBody = strip_tags(str_replace('<br/>', "\n", $email_content));
 
-    $mail->send();
-    $status = 'success';
+  $mail->send();
+
+  // SUCCESS -> Thank you page
+  header("Location: thank-you.php");
+  exit;
 
 } catch (Exception $e) {
-    $status = 'error';
+  // FAILURE -> existing popup on contacts page
+  header("Location: contacts.php?status=error");
+  exit;
 }
-
-header("Location: contacts.php?status=$status");
-exit;

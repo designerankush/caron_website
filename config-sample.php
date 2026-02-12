@@ -17,5 +17,13 @@ return [
     'from_email' => 'verified@example.com',
     'from_name'  => 'Your Brand',
     'reply_to'   => 'verified@example.com',
+    // Careers form recipient
+    'careers_to_email' => 'verified@example.com',
+    'careers_to_name'  => 'Your Brand',
+
+    // Optional BCC list (array OR comma-separated string)
+    'careers_bcc' => [
+      // 'someone@example.com'
+    ],
   ],
 ];
