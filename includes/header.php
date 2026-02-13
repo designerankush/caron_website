@@ -23,6 +23,10 @@ $meta_description = isset($meta_description) && trim($meta_description) !== ''
   ? $meta_description
   : ($__pageMeta['desc'] ?? $__defaultDesc);
 
+$focus_keyword = isset($focus_keyword) && trim($focus_keyword) !== ''
+  ? $focus_keyword
+  : ($__pageMeta['focus'] ?? '');
+
 // 4) Current URL (for canonical + OG)
 $__scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 $__host   = $_SERVER['HTTP_HOST'] ?? 'caroninfotech.com';
@@ -50,6 +54,10 @@ $og_image = $og_image ?? 'https://www.caroninfotech.com/assets/img/about/social-
   
   <title><?= htmlspecialchars($page_title) ?></title>
   <meta name="description" content="<?= htmlspecialchars($meta_description) ?>">
+  <?php if (!empty($focus_keyword)): ?>
+    <meta name="keywords" content="<?= htmlspecialchars($focus_keyword) ?>">
+    <meta name="focus_keyword" content="<?= htmlspecialchars($focus_keyword) ?>">
+  <?php endif; ?>
   <link rel="canonical" href="<?= htmlspecialchars($__url) ?>">
   <!-- Open Graph -->
   <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>" />
