@@ -1,6 +1,4 @@
 <?php
-// includes/page-meta.php
-// Central meta config (one place)
 
 return [
   // Main pages

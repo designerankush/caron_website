@@ -157,7 +157,7 @@
             <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a class="cs-card cs-style1 cs-hover_layer1">
+                <a href="saas-development.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/saas-development.jpg" alt="Service">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
@@ -171,7 +171,7 @@
             <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a href="service.php" class="cs-card cs-style1 cs-hover_layer1">
+                <a href="web-development.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/service_4.jpeg" alt="Service">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
@@ -184,7 +184,7 @@
             </div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a href="service.php" class="cs-card cs-style1 cs-hover_layer1">
+                <a href="game-development.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/service_3.jpeg" alt="Service">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
@@ -198,7 +198,7 @@
             <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a href="service.php" class="cs-card cs-style1 cs-hover_layer1">
+                <a href="mobile-development.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/mobile-dev.jpg" alt="Service">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
@@ -227,7 +227,7 @@
             <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a href="service.php" class="cs-card cs-style1 cs-hover_layer1">
+                <a href="automation-integrations.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/ai-dev.jpg" alt="AI, Dapps Development">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
@@ -253,7 +253,7 @@
             <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
             <div class="col-lg-3 col-6">
               <div class="cs-hobble">
-                <a href="service.php" class="cs-card cs-style1 cs-hover_layer1">
+                <a href="ui-ux-design.php" class="cs-card cs-style1 cs-hover_layer1">
                   <img src="assets/img/3d-design.jpg" alt="3D Design and Animation">
                   <div class="cs-card_overlay"></div>
                   <div class="cs-card_info">
