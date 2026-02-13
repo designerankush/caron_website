@@ -91,8 +91,8 @@ $filtered = array_values(array_filter($jobs, function($j) use ($q,$dept,$loc,$ty
             </div>
           </div>
           <div class="text-lg-end mt-3 mt-lg-0">
-            <a href="career.php?slug=<?=urlencode($j['slug'])?>" class="btn btn-outline-light me-2">View details</a>
-            <a href="career.php?slug=<?=urlencode($j['slug'])?>#apply" class="btn btn-primary">Apply</a>
+            <a href="career.php?slug=<?=urlencode($j['slug'])?>" class="cs-btn cs-style1">View details</a>
+            <a href="career.php?slug=<?=urlencode($j['slug'])?>#apply" class="cs-btn cs-style1">Apply</a>
           </div>
         </div>
       </div>

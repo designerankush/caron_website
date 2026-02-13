@@ -164,5 +164,4 @@ $pagedBlogs = array_slice($blogs, $offset, $perPage);
 
 </div>
 
-<div class="cs-height_120 cs-height_lg_80"></div>
 <?php include 'includes/footer.php'; ?>

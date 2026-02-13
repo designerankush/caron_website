@@ -81,13 +81,13 @@ include 'includes/header.php';
     </div>
 
     <!-- CTA BUTTON -->
-    <div class="cs-height_50"></div>
+    <!-- <div class="cs-height_50"></div>
     <div class="text-center">
         <button class="cs-btn cs-style1" id="openQuoteModal">
             Get a Quote
         </button>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <div class="cs-height_100 cs-height_lg_60"></div>
