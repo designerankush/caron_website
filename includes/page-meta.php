@@ -70,10 +70,34 @@ return [
     'desc'  => 'Explore careers at Caron Infotech. Find job opportunities in software, web, and SaaS development. Apply now to join our growing team.',
     'focus' => 'Software Company Careers',
   ],
-
   'thank-you.php' => [
     'title' => 'Thank You | Caron Infotech',
     'desc'  => 'Thank you for contacting Caron Infotech. We will get back to you soon.',
     'focus' => 'Software Development Company In Mohali',
+  ],
+  'ar-vr-development.php' => [
+    'title' => "AR/VR Development Services | Caron Infotech",
+    'desc'  => "Build immersive AR/VR experiences for web, mobile, and headsets. Caron Infotech delivers interactive AR apps, VR simulations, and 3D experiences tailored to your business goals.",
+    'focus' => "AR VR Development Company in Mohali"
+  ],
+  'ai-dapps-development.php' => [
+    'title' => "AI & DApps Development Company in Mohali | Caron Infotech",
+    'desc'  => "Caron Infotech builds AI-powered applications and decentralized DApps using blockchain, smart contracts, and advanced machine learning to create scalable and secure digital solutions.",
+    'focus' => "AI & DApps Development Company in Mohali"
+  ],
+  'blockchain-development.php' => [
+    'title' => "Blockchain Development Services | Caron Infotech",
+    'desc'  => "Caron Infotech provides secure blockchain development services including smart contracts, DApps, private blockchain, DeFi platforms, and enterprise blockchain solutions.",
+    'focus' => "Blockchain Development Company in Mohali"
+  ],
+  '3d-design-animation.php' => [
+    'title' => "3D Design & Animation Services | Caron Infotech",
+    'desc'  => "Professional 3D modeling, animation, product visualization, and motion graphics services to bring your digital ideas to life with realism and creativity.",
+    'focus' => "3D Design and Animation Services in Mohali"
+  ],
+  'digital-marketing.php' => [
+    'title' => "Digital Marketing Services | Caron Infotech",
+    'desc'  => "Caron Infotech provides SEO, PPC, social media marketing, analytics, and content marketing services to help businesses grow traffic, leads, and revenue.",
+    'focus' => "Digital Marketing Company in Mohali"
   ],
 ];

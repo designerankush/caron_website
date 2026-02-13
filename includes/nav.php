@@ -10,7 +10,11 @@ $servicePages = [
   'mobile-development.php',
   'ui-ux-design.php',
   'game-development.php',
-  'automation-integrations.php'
+  'automation-integrations.php',
+  'ar-vr-development.php',
+  'ai-dapps-development.php',
+  'blockchain-development.php',
+  'digital-marketing.php',
 ];
 ?>
 
@@ -69,6 +73,26 @@ $servicePages = [
 
                   <li class="<?= $currentPage === 'automation-integrations.php' ? 'active' : '' ?>">
                     <a href="automation-integrations.php">Automation & Integrations</a>
+                  </li>
+
+                  <li class="<?= $currentPage === 'ar-vr-development.php' ? 'active' : '' ?>">
+                    <a href="ar-vr-development.php">AR VR Development</a>
+                  </li>
+                  
+                  <li class="<?= $currentPage === 'ai-dapps-development.php' ? 'active' : '' ?>">
+                    <a href="ai-dapps-development.php">AI DAPPS Development</a>
+                  </li>
+                  
+                  <li class="<?= $currentPage === 'blockchain-development.php' ? 'active' : '' ?>">
+                    <a href="blockchain-development.php">Blockchain Development</a>
+                  </li>
+                  
+                  <li class="<?= $currentPage === '3d-design-animation.php' ? 'active' : '' ?>">
+                    <a href="3d-design-animation.php">3D Design and Animation</a>
+                  </li>
+                  
+                  <li class="<?= $currentPage === 'digital-marketing.php' ? 'active' : '' ?>">
+                    <a href="digital-marketing.php">Digital Marketing</a>
                   </li>
 
                 </ul>
