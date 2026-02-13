@@ -1,6 +1,4 @@
 <?php
-$page_title = "Mobile App Development | Caron Infotech";
-$meta_description = "Custom mobile app development for iOS, Android, and cross-platform solutions. Secure, scalable, and performance-driven apps by Caron Infotech.";
 include 'includes/header.php';
 ?>
 <div class="service-page mobile-page">

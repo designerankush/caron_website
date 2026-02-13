@@ -1,6 +1,4 @@
 <?php
-$page_title = "Automation & Integrations | Caron Infotech";
-$meta_description = "Business automation and system integrations using APIs, workflows, cloud services, and custom software solutions.";
 include 'includes/header.php';
 ?>
 <div class="service-page automation-page">

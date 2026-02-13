@@ -16,8 +16,6 @@ $post = $slug ? ci_load_post($slug) : null;
    NOT FOUND HANDLING
 ================================ */
 if (!$post) {
-  $page_title = "Blog | Caron Infotech";
-  $meta_description = "Insights from Caron Infotech on SaaS, web & mobile development.";
   include 'includes/header.php'; ?>
   <div class="container py-5 text-center">
     <h1 class="cs-page_title">Post not found</h1>

@@ -1,6 +1,4 @@
 <?php
-$page_title       = "Blog | Caron Infotech";
-$meta_description = "Insights on SaaS, web & mobile development, design and cloud from the Caron Infotech team.";
 include 'includes/header.php';
 
 /**

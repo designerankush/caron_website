@@ -1,6 +1,4 @@
 <?php
-$page_title = "Game Development | Caron Infotech";
-$meta_description = "End-to-end game development services including game design, Unity & Unreal development, multiplayer systems, monetization, and performance optimization.";
 include 'includes/header.php';
 ?>
 <div class="service-page game-page">

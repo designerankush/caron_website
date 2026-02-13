@@ -1,6 +1,4 @@
 <?php
-$page_title = "UI / UX Design Services | Caron Infotech";
-$meta_description = "User-centric UI/UX design services focused on usability, conversion, and scalable digital experiences for web and mobile products.";
 include 'includes/header.php';
 ?>
 <div class="service-page ui-ux-page">

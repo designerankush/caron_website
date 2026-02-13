@@ -1,6 +1,4 @@
 <?php
-$page_title = "SaaS Development | Caron Infotech";
-$meta_description = "End-to-end SaaS product development — from architecture and UI/UX to cloud, billing, and scalable production systems.";
 include 'includes/header.php';
 ?>
 

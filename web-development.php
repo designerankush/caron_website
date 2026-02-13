@@ -1,6 +1,4 @@
 <?php
-$page_title = "Web Development Services | Caron Infotech";
-$meta_description = "Professional web development services — high-performance, scalable, SEO-ready websites and web applications.";
 include 'includes/header.php';
 ?>
 <div class="service-page web-page">

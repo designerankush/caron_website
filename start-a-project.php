@@ -1,6 +1,4 @@
 <?php
-$page_title = "Start a Project | Caron Infotech";
-$meta_description = "Start your digital project with Caron Infotech. Share your idea and let our experts turn it into a scalable, high-performance product.";
 include 'includes/header.php';
 ?>
 
