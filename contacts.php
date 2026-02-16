@@ -35,7 +35,7 @@
             <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#05abc3"></path>
           </svg>
           <a class="text-white" href="mailto:manish@caroninfotech.com">manish@caroninfotech.com</a><br/>
-          <a class="text-white" href="mailto:mukhpal.singh@caroninfotech.com">mukhpal.singh@caroninfotech.com</a>
+          <a class="text-white" href="mailto:contact@caroninfotech.com">contact@caroninfotech.com</a>
         </li>
         <li>
           <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,5 +137,5 @@
     </div>
   </div>
 </div>
-
+<div class="cs-height_100 cs-height_lg_80"></div>
 <?php include 'includes/footer.php'; ?>

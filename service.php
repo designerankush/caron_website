@@ -31,49 +31,55 @@
 
       <div class="row">
         <div class="col-md-4">
-          <div class="services_block">
-            <em><img src="assets/img/icons/services/Web-Development.svg" alt="Web Development" width="40" /></em>
-            <h4 class="h5 mb-2">SaaS development, Product development </h4>
-            <p><strong>Custom Solutions for a Dynamic Online Presence</strong> <br />
-              In today's digital age, a website is the cornerstone of any business. At Caron Infotech, we understand
-              this. Our web development team is adept at creating websites that are not only visually stunning but are
-              also optimized for performance, accessibility, and user experience.
-              <br /> From robust eCommerce platforms to dynamic content management systems, our solutions are tailored
-              to meet your business's unique needs and objectives.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="services_block">
-            <em><img src="assets/img/icons/services/Mobile-Development.svg" alt="" width="40" /></em>
-            <h4 class="h5 mb-2">Mobile App Development</h4>
-            <p><strong>Bridging the Gap Between Users and Technology</strong> <br />
-              With the majority of internet traffic coming from mobile devices almost (90%), a seamless mobile
-              experience is imperative. Our mobile development expertise spans across iOS and Android platforms,
-              ensuring your application performs flawlessly regardless of the device. We focus on intuitive design,
-              user-friendly interfaces, and innovative features to keep your users engaged and loyal. <br />
-              Whether it's a consumer app aimed at the mass market or a specialized solution to improve business
-              processes, Caron Infotech has the skills and experience to bring your mobile app to life.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="services_block">
-            <em><img src="assets/img/icons/services/Game-Development.svg" alt="" width="40" /></em>
-            <h4 class="h5 mb-2">Game Development</h4>
-            <p><strong>Crafting and Engaging Digital Worlds</strong> <br />
-              The power of a well-developed game lies in its ability to transport players to immersive worlds filled
-              with challenges, stories, and adventures. Our game development team combines creativity with technical
-              prowess to create captivating 2D and 3D games. <br />
-              Leveraging the latest in AR and VR technologies, we push the boundaries of what's possible, delivering
-              games that are not only fun to play but also offer unique experiences. From indie titles to complex
-              multiplayer games, our portfolio showcases our passion for game development and our commitment to quality.
-            </p>
-          </div>
-        </div>
-
+          <a href="saas-development.php" class="services_link">
+            <div class="services_block">
+              <em><img src="assets/img/icons/services/Web-Development.svg" alt="Web Development" width="40" /></em>
+              <h4 class="h5 mb-2">SaaS development, Product development </h4>
+              <p><strong>Custom Solutions for a Dynamic Online Presence</strong> <br />
+                In today's digital age, a website is the cornerstone of any business. At Caron Infotech, we understand
+                this. Our web development team is adept at creating websites that are not only visually stunning but are
+                also optimized for performance, accessibility, and user experience.
+                <br /> From robust eCommerce platforms to dynamic content management systems, our solutions are tailored
+                to meet your business's unique needs and objectives.
+              </p>
+            </div>
+          </a>
       </div>
+
+        <div class="col-md-4">
+          <a href="mobile-development.php" class="services_link">
+            <div class="services_block">
+              <em><img src="assets/img/icons/services/Mobile-Development.svg" alt="" width="40" /></em>
+              <h4 class="h5 mb-2">Mobile App Development</h4>
+              <p><strong>Bridging the Gap Between Users and Technology</strong> <br />
+                With the majority of internet traffic coming from mobile devices almost (90%), a seamless mobile
+                experience is imperative. Our mobile development expertise spans across iOS and Android platforms,
+                ensuring your application performs flawlessly regardless of the device. We focus on intuitive design,
+                user-friendly interfaces, and innovative features to keep your users engaged and loyal. <br />
+                Whether it's a consumer app aimed at the mass market or a specialized solution to improve business
+                processes, Caron Infotech has the skills and experience to bring your mobile app to life.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="game-development.php" class="services_link">
+            <div class="services_block">
+              <div class="services_block">
+                <em><img src="assets/img/icons/services/Game-Development.svg" alt="" width="40" /></em>
+                <h4 class="h5 mb-2">Game Development</h4>
+                <p><strong>Crafting and Engaging Digital Worlds</strong> <br />
+                  The power of a well-developed game lies in its ability to transport players to immersive worlds filled
+                  with challenges, stories, and adventures. Our game development team combines creativity with technical
+                  prowess to create captivating 2D and 3D games. <br />
+                  Leveraging the latest in AR and VR technologies, we push the boundaries of what's possible, delivering
+                  games that are not only fun to play but also offer unique experiences. From indie titles to complex
+                  multiplayer games, our portfolio showcases our passion for game development and our commitment to quality.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
     </div>
     </div>
@@ -1296,27 +1302,5 @@
 <!-- End Testimonial Section -->
 
 <div class="cs-height_50 cs-height_lg_30"></div>
-  <!-- Start CTA -->
-  <section>
-    <div class="container">
-      <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="assets/img/cta_bg.jpeg">
-        <div class="cs-shape_1"></div>
-        <div class="cs-shape_1"></div>
-        <div class="cs-shape_1"></div>
-        <div class="cs-cta_in">
-          <h2 class="cs-cta_title cs-semi_bold cs-m0"> Let’s brainstorm the<br>  next big thing together!! </h2>
-          <div class="cs-height_70 cs-height_lg_30"></div>
-          <a href="contacts.php" class="cs-text_btn">
-            <span>Consult now</span>
-            <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z"
-                fill="currentColor" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End CTA -->
+
 <?php include 'includes/footer.php'; ?>

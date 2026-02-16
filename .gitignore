@@ -1,0 +1,53 @@
+# =========================
+# ENV / SECRETS
+# =========================
+/config.php
+.env
+.env.local
+.env.production
+
+# =========================
+# DEPENDENCIES
+# =========================
+/vendor/
+composer.phar
+
+# =========================
+# SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOG FILES
+# =========================
+*.log
+error_log
+debug.log
+
+# =========================
+# CACHE / TEMP FILES
+# =========================
+/cache/
+/tmp/
+/logs/
+
+# =========================
+# IDE FILES
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# NODE (if ever used)
+# =========================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# =========================
+# OS FILES
+# =========================
+desktop.ini

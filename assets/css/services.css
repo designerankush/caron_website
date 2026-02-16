@@ -1,0 +1,129 @@
+/* ==================================================
+   SECTION BACKGROUNDS & SEPARATION
+================================================== */
+
+.saas-intro-section {
+  background: linear-gradient(180deg, #0b1220 0%, #0e1626 100%);
+}
+
+.saas-features-section {
+  background: linear-gradient(180deg, #0e1626 0%, #0b1220 100%);
+}
+
+.saas-cta-section {
+  background: #070c15;
+}
+
+/* ==================================================
+   SERVICE CARDS (SaaS)
+================================================== */
+
+.services_block {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 36px;
+  height: 100%;
+  transition: all 0.35s ease;
+}
+
+.services_block:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(0, 188, 212, 0.45);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* ==================================================
+   ICONS (SVG)
+================================================== */
+
+.services_block--icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 22px;
+}
+
+.services_block--icon img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  transition: all 0.3s ease;
+}
+
+.services_block:hover .services_block--icon img {
+  transform: scale(1.12);
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 0 12px rgba(0, 188, 212, 0.45));
+}
+
+/* ==================================================
+   TYPOGRAPHY
+================================================== */
+
+.services_block h4 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.services_block p {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.service-page section {
+  padding: 0;
+}
+
+/* Intro */
+.service-page .saas-intro-section {
+  padding: 90px 0 70px;
+}
+
+/* Features (cards) */
+.service-page .saas-features-section {
+  padding: 80px 0 100px;
+}
+
+/* CTA */
+.service-page .saas-cta-section {
+  padding: 90px 0;
+}
+.service-page .saas-features-section .row {
+  row-gap: 32px;
+}
+.service-page .cs-height_60,
+.service-page .cs-height_80,
+.service-page .cs-height_120 {
+  display: none !important;
+}
+.service-page .saas-cta-section {
+  background: linear-gradient(180deg, #070c15, #04070d);
+}
+
+/* Make service cards clickable */
+.services_link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover + focus effect */
+.services_link:hover .services_block,
+.services_link:focus-visible .services_block {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Smooth transition */
+.services_block {
+  height: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

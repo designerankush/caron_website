@@ -59,10 +59,8 @@
     }
     // -----------------------------------------
 
-    // chat.html & voice.html
-    const API_BASE = `${window.location.protocol}//${window.location.hostname}:3000`;
-    const API_URL  = `${API_BASE}/chat`;
-    // const API_URL = "http://localhost:3000/chat";
+    const API_URL = "/assistant-api/chat";
+
     const messagesDiv = document.getElementById("messages");
     const input = document.getElementById("userInput");
     const sendBtn = document.getElementById("sendBtn");

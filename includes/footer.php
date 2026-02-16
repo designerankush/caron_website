@@ -1,5 +1,40 @@
 
   <!-- Start Footer -->
+  <!-- Start CTA -->
+  <section>
+    <div class="container">
+      <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="assets/img/cta_bg.jpeg">
+        <div class="cs-shape_1"></div>
+        <div class="cs-shape_1"></div>
+        <div class="cs-shape_1"></div>
+        <div class="cs-cta_in">
+          <h2 class="cs-cta_title cs-semi_bold cs-m0"> Let’s brainstorm the<br> next big thing together!! </h2>
+          <div class="cs-height_70 cs-height_lg_30"></div>
+          <!-- <a href="contacts.php" class="cs-text_btn">
+            <span>Consult now</span>
+            <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z"
+                fill="currentColor" />
+            </svg>
+          </a> -->
+          <div class="text-center">
+            <button class="cs-btn cs-style1" id="openQuoteModal">
+                Consult now
+                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End CTA -->
+
   <footer class="cs-fooer">
     <div class="cs-fooer_main">
       <div class="container">
@@ -67,29 +102,32 @@
                 <div class="col-md-6">
                   <ul class="cs-menu_widget cs-mp0">
                     <li>
-                      <a href="service.php">SAAS Development</a>
+                      <a href="saas-development.php">SAAS Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Web Development</a>
+                      <a href="web-development.php">Web Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Mobile Development</a>
+                      <a href="mobile-development.php">Mobile Development</a>
                     </li>
                     <li>
-                      <a href="service.php">Game Development</a>
+                      <a href="game-development.php">Game Development</a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-md-6">
                   <ul class="cs-menu_widget cs-mp0">
                     <li>
-                      <a href="service.php">Web3 Development</a>
+                      <a href="automation-integrations.php">Automation & Integrations</a>
                     </li>
                     <li>
-                      <a href="service.php">UI/UX Design</a>
+                      <a href="ui-ux-design.php">UI/UX Design</a>
                     </li>
                     <li>
                       <a href="social.php">Social Hub</a>
+                    </li>
+                    <li>
+                      <a href="start-a-project.php">Start a Project</a>
                     </li>
                   </ul>
                 </div>
@@ -102,7 +140,7 @@
               <ul class="cs-menu_widget cs-mp0">
                 <li>#538, 5th floor, Jubilee Walk, Sector 70, <br /> SAS Nagar, Punjab, India, <br /> 160071</li>
                 <li><a href="tel: +919872612298 ">+919872612298 </a></li>
-                <li><a href="mailto:manish@caroninfotech.com">manish@caroninfotech.com</a> </li>
+                <li><a href="mailto:contact@caroninfotech.com">contact@caroninfotech.com</a> </li>
               </ul>
             </div>
           </div>
@@ -127,7 +165,9 @@
     <div class="container">
       <div class="cs-bottom_footer">
         <div class="cs-bottom_footer_left">
-          <span class="cs-copyright">Copyright © 2025 caroninfotech</span>
+          <span class="cs-copyright">
+            Copyright © <?= date('Y') ?> Caron Infotech. All Rights Reserved.
+          </span>
         </div>
         <!-- <div class="cs-bottom_footer_right">
           <ul class="cs-footer_links cs-mp0">
@@ -166,10 +206,10 @@
       <button type="button" class="ci-close" aria-label="Close">×</button>
     </div>
 
-    <div class="ci-tabs" role="tablist">
+    <!-- <div class="ci-tabs" role="tablist">
       <button class="ci-tab ci-active" role="tab" aria-selected="true" data-target="#ci-tab-chat">Chat with us</button>
       <button class="ci-tab" role="tab" aria-selected="false" data-target="#ci-tab-voice">Talk with us</button>
-    </div>
+    </div> -->
 
     <div class="ci-bodies">
       <!-- CHAT -->
@@ -196,8 +236,59 @@
     </div>
   </div>
 
-  <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button>
+  <!-- <button class="ci-fab" aria-label="Open Caron’s Assistant">💬</button> -->
 </div>
+
+<!-- Quote Modal -->
+<div class="cs-modal" id="quoteModal">
+  <div class="cs-modal-overlay"></div>
+
+  <div class="cs-modal-content">
+    <button class="cs-modal-close" id="closeQuoteModal">&times;</button>
+
+    <h2 class="cs-modal-title">Let’s Get Started</h2>
+    <p class="cs-modal-subtitle">
+      Tell us about your project and we’ll get back to you shortly.
+    </p>
+
+    <form action="mail_go.php" method="POST" class="cs-form">
+
+      <div class="cs-form-group">
+        <input type="text" name="full-name" placeholder="Full Name*" required>
+      </div>
+
+      <div class="cs-form-group">
+        <input type="email" name="email" placeholder="Email Address*" required>
+      </div>
+
+      <div class="cs-form-group">
+        <input type="text" name="number" placeholder="Phone Number">
+      </div>
+
+      <div class="cs-form-group">
+        <select name="project" required>
+          <option value="">Select Project Type*</option>
+          <option>SaaS Development</option>
+          <option>Web Development</option>
+          <option>Mobile App Development</option>
+          <option>UI / UX Design</option>
+          <option>Game Development</option>
+          <option>Automation & Integrations</option>
+        </select>
+      </div>
+
+      <div class="cs-form-group">
+        <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+      </div>
+
+      <button type="submit" class="cs-btn cs-style1 w-100">
+        Submit Request
+      </button>
+
+    </form>
+  </div>
+</div>
+
 
 <style>
   /* ====== Caron Assistant — fully namespaced, no global bleed ====== */
@@ -247,6 +338,16 @@
     #ci-assistant .ci-bodies { height:70vh; max-height:70vh; }
   }
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV7HF65ZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1GV7HF65ZY');
+</script>
 
 <script>
   (function(){
@@ -298,6 +399,7 @@
   <script src="assets/js/plugins/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
+  <script src="assets/js/quote-popup.js"></script>
 </body>
 
 </html>
