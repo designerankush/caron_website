@@ -109,9 +109,9 @@ $servicePages = [
               </li>
 
               <!-- Careers -->
-              <li class="<?= $currentPage === 'careers.php' ? 'active' : '' ?>">
+              <!-- <li class="<?= $currentPage === 'careers.php' ? 'active' : '' ?>">
                 <a href="careers.php">Careers</a>
-              </li>
+              </li> -->
 
               <!-- FAQ -->
               <li class="<?= $currentPage === 'faq.php' ? 'active' : '' ?>">
@@ -119,9 +119,9 @@ $servicePages = [
               </li>
 
               <!-- Contact -->
-              <li class="<?= $currentPage === 'contacts.php' ? 'active' : '' ?>">
+              <!-- <li class="<?= $currentPage === 'contacts.php' ? 'active' : '' ?>">
                 <a href="contacts.php">Contact</a>
-              </li>
+              </li> -->
 
             </ul>
           </div>
